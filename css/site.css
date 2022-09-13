@@ -7,6 +7,14 @@
     font-family: 'Pixelpoiiz'; /* 10px */
     src: url(../fnt/pixelpoiiz.woff2);
 }
+@font-face {
+    font-family: 'Yoster';
+    src: url(../fnt/yoster.woff2);
+}
+@font-face {
+    font-family: 'Scr18';
+    src: url(../fnt/Scr18.woff2);
+}
 
 /* default html element overrides */
 body {
@@ -53,6 +61,7 @@ h4 { font-size: 10px; }
 }
 .sidebar > p {
     margin: 5px; 
+    margin-top: 10px;
     font-size: 32px; 
     line-height: 65%;
     color: #99FFCC;
@@ -68,8 +77,8 @@ h4 { font-size: 10px; }
     font-size: 20px;
 }
 .sidebar > ul > li {
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 3px;
+    padding-bottom: 3px;
     width: 100%;
 }
 .sidebar > ul > li:hover {
@@ -85,6 +94,22 @@ h4 { font-size: 10px; }
 }
 .sidebar > ul > li > a > img { /* if you're looking at this code i apologize lmfao */
     filter: drop-shadow(0px 0px 4px #FF99CC);
+}
+
+/* sidebar marquee */
+.text-scroller {
+    margin-top: -6px;
+    background: linear-gradient(to bottom, rgba(234,231,233,0.45) 0%,rgba(206,199,205,0.45) 4%,rgba(200,191,198,0.45) 7%,rgba(189,180,187,0.45) 11%,rgba(180,169,178,0.45) 18%,rgba(169,156,166,0.45) 21%,rgba(165,152,162,0.45) 25%,rgba(152,136,148,0.45) 29%,rgba(148,132,144,0.45) 32%,rgba(136,118,132,0.45) 36%,rgba(127,107,122,0.45) 43%,rgba(106,84,101,0.45) 54%,rgba(101,78,96,0.45) 61%,rgba(95,71,90,0.45) 64%,rgba(92,68,86,0.45) 79%,rgba(88,64,82,0.45) 82%,rgba(90,65,84,0.45) 89%,rgba(97,74,92,0.45) 93%,rgba(133,115,129,0.45) 96%,rgba(41,27,38,0.45) 100%);
+    backdrop-filter: blur(4px); /* It's actually surprisingly easy to mod your 3DS */
+    height: 32px;
+    width: 100%;
+}
+.scroll-text {
+    line-height: 32px;
+    font-family: 'Scr18';
+    font-size: 18px;
+    color: #f4dbff;
+    text-shadow: 0px 0px 4px #f477ff;
 }
 
 /* sidebar footer */

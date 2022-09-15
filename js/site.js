@@ -35,3 +35,23 @@ r = Math.floor(6*Math.random());
 
 $(".scroll-text").css('color', r_neon[r][0]);
 $(".scroll-text").css('textShadow', r_neon[r][1] + ' 0px 0px 6px');
+
+// mobile navbutton
+
+var navOpen = false;
+
+function navButton() {
+    if (navOpen) {
+        // close nav
+        $(".sidebar").css('left', '-256px');
+        $(".page-content").css('margin-left', '0px');
+        $(".navButton").css('left', '3px');
+        $(".navButton img").attr('src', 'img/menu.svg');
+    } else {
+        $(".sidebar").css('left', '0px');
+        $(".page-content").css('margin-left', '256px');
+        $(".navButton").css('left', '259px');
+        $(".navButton img").attr('src', 'img/close.svg');
+    }
+    navOpen = !navOpen;
+}

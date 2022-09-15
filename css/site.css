@@ -367,4 +367,5 @@ h4 { font-size: 10px; }
     .page-content { width: calc(100vw - 32px); margin-left: 0px; padding-top: 82px; padding-right: 0px; }
     .navButton { left: 3px; transition: left 1s; }
     .card { width: calc(100vw - 64px); }
+    #hello { max-width: 75vw; }
 }

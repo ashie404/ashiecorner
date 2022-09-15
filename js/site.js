@@ -46,10 +46,12 @@ function navButton() {
         $(".sidebar").css('left', '');
         $(".navButton").css('left', '');
         $(".navButton img").attr('src', 'img/menu.svg');
+        $(".page-content").attr('id', '');
     } else {
         $(".sidebar").css('left', '0px');
         $(".navButton").css('left', '259px');
         $(".navButton img").attr('src', 'img/close.svg');
+        $(".page-content").attr('id', 'navOpen');
     }
     navOpen = !navOpen;
 }

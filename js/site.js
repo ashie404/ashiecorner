@@ -44,12 +44,10 @@ function navButton() {
     if (navOpen) {
         // close nav
         $(".sidebar").css('left', '-256px');
-        $(".page-content").css('margin-left', '0px');
         $(".navButton").css('left', '3px');
         $(".navButton img").attr('src', 'img/menu.svg');
     } else {
         $(".sidebar").css('left', '0px');
-        $(".page-content").css('margin-left', '256px');
         $(".navButton").css('left', '259px');
         $(".navButton img").attr('src', 'img/close.svg');
     }

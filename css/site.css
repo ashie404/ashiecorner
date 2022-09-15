@@ -61,6 +61,7 @@ h4 { font-size: 10px; }
 .sidebar > p {
     margin: 5px; 
     margin-top: 10px;
+    margin-bottom: 20px;
     font-size: 32px; 
     line-height: 65%;
     color: #99FFCC;

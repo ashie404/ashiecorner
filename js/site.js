@@ -43,8 +43,8 @@ var navOpen = false;
 function navButton() {
     if (navOpen) {
         // close nav
-        $(".sidebar").css('left', '-256px');
-        $(".navButton").css('left', '3px');
+        $(".sidebar").css('left', '');
+        $(".navButton").css('left', '');
         $(".navButton img").attr('src', 'img/menu.svg');
     } else {
         $(".sidebar").css('left', '0px');

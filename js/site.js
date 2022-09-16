@@ -1,5 +1,27 @@
 // this poorly written javascript brought to you by a gay cat
 
+// mobile navbutton
+
+var navOpen = false;
+
+function navButton() {
+    if (navOpen) {
+        // close nav
+        $(".sidebar").css('left', '');
+        $(".navButton").css('left', '');
+        $(".navButton img").attr('src', 'img/menu.svg');
+        $(".page-content").attr('id', '');
+    } else {
+        $(".sidebar").css('left', '0px');
+        $(".navButton").css('left', '259px');
+        $(".navButton img").attr('src', 'img/close.svg');
+        $(".page-content").attr('id', 'navOpen');
+    }
+    navOpen = !navOpen;
+}
+
+$(document).ready(function() {
+
 // randomized text stuff hehe :3
 var r_text = new Array();
 r_text[0] = "nyanyanya!";
@@ -36,22 +58,30 @@ r = Math.floor(6*Math.random());
 $(".scroll-text").css('color', r_neon[r][0]);
 $(".scroll-text").css('textShadow', r_neon[r][1] + ' 0px 0px 6px');
 
-// mobile navbutton
+// mobile nav swipe actions
 
-var navOpen = false;
-
-function navButton() {
-    if (navOpen) {
-        // close nav
-        $(".sidebar").css('left', '');
-        $(".navButton").css('left', '');
-        $(".navButton img").attr('src', 'img/menu.svg');
-        $(".page-content").attr('id', '');
-    } else {
+function navSwipeRight() {
+    // open nav
+    if (!navOpen) {
         $(".sidebar").css('left', '0px');
         $(".navButton").css('left', '259px');
         $(".navButton img").attr('src', 'img/close.svg');
         $(".page-content").attr('id', 'navOpen');
+        navOpen = !navOpen;
     }
-    navOpen = !navOpen;
 }
+function navSwipeLeft() {
+    // close nav
+    if (navOpen) {
+        $(".sidebar").css('left', '');
+        $(".navButton").css('left', '');
+        $(".navButton img").attr('src', 'img/menu.svg');
+        $(".page-content").attr('id', '');
+        navOpen = !navOpen;
+    }
+}
+
+Hammer(document.body).on("swipeleft", navSwipeLeft);
+Hammer(document.body).on("swiperight", navSwipeRight);
+
+});

@@ -73,7 +73,7 @@ function navSwipeLeft() {
     }
 }
 
-Hammer(document.body).on("swipeleft", navSwipeLeft);
-Hammer(document.body).on("swiperight", navSwipeRight);
+Hammer(document).on("swipeleft", navSwipeLeft);
+Hammer(document).on("swiperight", navSwipeRight);
 
 });

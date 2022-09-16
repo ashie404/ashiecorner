@@ -63,21 +63,13 @@ $(".scroll-text").css('textShadow', r_neon[r][1] + ' 0px 0px 6px');
 function navSwipeRight() {
     // open nav
     if (!navOpen) {
-        $(".sidebar").css('left', '0px');
-        $(".navButton").css('left', '259px');
-        $(".navButton img").attr('src', 'img/close.svg');
-        $(".page-content").attr('id', 'navOpen');
-        navOpen = !navOpen;
+        navButton();
     }
 }
 function navSwipeLeft() {
     // close nav
     if (navOpen) {
-        $(".sidebar").css('left', '');
-        $(".navButton").css('left', '');
-        $(".navButton img").attr('src', 'img/menu.svg');
-        $(".page-content").attr('id', '');
-        navOpen = !navOpen;
+        navButton();
     }
 }
 

@@ -20,7 +20,7 @@ function navButton() {
     navOpen = !navOpen;
 }
 
-$(document).ready(function() {
+$(function() {
 
 // randomized text stuff hehe :3
 var r_text = new Array();

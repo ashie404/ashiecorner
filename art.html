@@ -3,7 +3,7 @@
     <head>
         <title>my art! - AshieCorner</title>
         <link rel="stylesheet" href="css/site.css">
-        <link rel="stylesheet" href="featherlight/featherlight.min.css">
+        <link rel="stylesheet" href="css/featherlight.min.css">
         <link rel="icon" href="img/ashicon.png">
 
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -39,10 +39,10 @@
                     <figure><img src="art/love-thumb.jpg" alt="love"><div id="lbl">love.</div></figure>
                 </a>
                 <a class="box" href="#" data-featherlight="art/purpblue.png">
-                    <figure><img src="art/purpblue-thumb.jpg" alt="purple heart and blue heart"><div id="lbl">💜💙</div></figure>
+                    <figure><img src="art/purpblue-thumb.jpg" alt="purple heart and blue heart"><div id="lbl">&#x1f49c;&#x1f499;</div></figure>
                 </a>
                 <a class="box" href="#" data-featherlight="art/hangin.png">
-                    <figure><img src="art/hangin-thumb.jpg" alt="hangin"><div id="lbl">hangin🌊</div></figure>
+                    <figure><img src="art/hangin-thumb.jpg" alt="hangin"><div id="lbl">hangin&#x1f30a;</div></figure>
                 </a>
                 <a class="box" href="#" data-featherlight="art/nywa.png">
                     <figure><img src="art/nywa-thumb.jpg"></figure>
@@ -51,7 +51,7 @@
                     <figure><img src="art/pride-monf-thumb.jpg" alt="pride month!"><div id="lbl">pride month!</div></figure>
                 </a>
                 <a class="box" href="#" data-featherlight="art/headintheclouds.png">
-                    <figure><img src="art/headintheclouds-thumb.jpg" alt="head in the clouds"><div id="lbl">head in the clouds☁️</div></figure>
+                    <figure><img src="art/headintheclouds-thumb.jpg" alt="head in the clouds"><div id="lbl">head in the clouds&#9729;</div></figure>
                 </a>
                 <a class="box" href="#" data-featherlight="art/tired.png">
                     <figure><img src="art/tired-thumb.jpg" alt="tired"><div id="lbl">tired</div></figure>
@@ -80,17 +80,22 @@
         <script type="text/javascript" src="js/jquery.js"></script>
         <script type="text/javascript" src="js/hammer.js"></script>
         <script type="text/javascript" src="js/site.js"></script>  
-        <script type="text/javascript" src="featherlight/featherlight.min.js"></script>  
+        <script type="text/javascript" src="js/featherlight.min.js"></script>  
 
         <!-- twemoji for the 4 emojis on this page this is so overkill -->
         <script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" crossorigin="anonymous"></script>
 
         <!-- embedded script uwu -->
-        <script>
+        <script type="text/javascript">
         twemoji.parse(document.body);
+
+        // add image caption at bottom of screen and download icon to featherlight lightboxes :3
         $.featherlight.prototype.afterContent = function () {
             var caption = this.$currentTarget.find('#lbl').html();
-            $('<div class="caption">').html(caption).appendTo(this.$instance.find('.featherlight-content'));
+            if (caption) { $('<div class="caption">').html('<span>' + caption + '</span>').appendTo(this.$instance.find('.featherlight-content')); }
+
+            var dlLink = this.$currentTarget.attr('data-featherlight');
+            $('<a class="featherlight-dl-icon" aria-label="Download" download>').html('⊻').attr('href', dlLink).appendTo(this.$instance.find('.featherlight-content'));
         }
         </script>
     </body>

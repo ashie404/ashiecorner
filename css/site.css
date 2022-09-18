@@ -488,6 +488,9 @@ img.emoji {
     .card { width: calc(100vw - 64px); }
     #hello { max-width: 75vw; }
     #navOpen { filter: blur(4px); }
+
+    .featherlight-close-icon { width: 50px!important; line-height: 50px!important; font-size: 32px; }
+    .featherlight-dl-icon { width: 50px!important; line-height: 50px!important; right: 50px!important; font-size: 32px; }
 }
 
 /* to better fit large screens, double scale literally everything lmao */

@@ -458,7 +458,7 @@ img.emoji {
 }
 
 /* to better fit large screens, double scale literally everything lmao */
-@media only screen and (min-width: 2560px) {
+@media only screen and (min-width: 2048px) {
     .sidebar { width: 512px; background-size: 128px; border-right-width: 8px; }
     .sidebar > p { font-size: 64px; }
     .sidebar > a > img { width: 512px; }

@@ -406,11 +406,19 @@ h4 { font-size: 10px; }
 }
 
 .caption {
+    position: fixed;
+    text-align: center;
+    bottom: 12px;
+    left: 0;
     margin: 0;
     padding: 0;
-    font-size: 16px;
+    font-size: 32px;
     color: #FFF;
-
+    width: 100%;
+    text-shadow: 0px 0px 8px #FF99CC;
+}
+.caption > img {
+    filter: drop-shadow(0px 0px 4px #FF99CC);
 }
 
 img.emoji {

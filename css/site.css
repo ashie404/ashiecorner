@@ -491,6 +491,11 @@ img.emoji {
     #active, #inactive, #on-hold { font-size: 44px; border-top-right-radius: 30px; border-bottom-right-radius: 30px; }
     #active > img, #inactive > img, #on-hold > img { width: 32px; }
 
+    .gallery { max-width: 1536px; }
+    .box { height: 512px; }
+    .box > figure > img { height: 492px; }
+    #lbl { font-size: 64px; line-height: 64px; }
+
     h1, h2, h3, h4 { margin-left: -42px; padding-left: 42px; }
     h1 { font-size: 80px; }
     h2 { font-size: 60px; }

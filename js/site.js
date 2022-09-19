@@ -8,13 +8,13 @@ function navButton() {
     if (navOpen) {
         // close nav
         $(".sidebar").css('left', '');
-        $(".navButton").css('left', '');
-        $(".navButton img").attr('src', 'img/menu.svg');
+        $(".nav-button").css('left', '');
+        $(".nav-button img").attr('src', 'img/menu.svg');
         $(".page-content").attr('id', '');
     } else {
         $(".sidebar").css('left', '0px');
-        $(".navButton").css('left', '259px');
-        $(".navButton img").attr('src', 'img/close.svg');
+        $(".nav-button").css('left', '259px');
+        $(".nav-button img").attr('src', 'img/close.svg');
         $(".page-content").attr('id', 'navOpen');
     }
     navOpen = !navOpen;

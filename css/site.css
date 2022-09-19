@@ -180,6 +180,12 @@ h4 { font-size: 10px; }
     text-shadow: 0px 0px 6px #99FFCC;
     font-size: 32px;
 }
+.page-content > ul {
+    margin: 0;
+    font-size: 32px;
+    list-style-type: square; /* fallback */
+    list-style-image: url(../img/heart-bullet.png);
+}
 
 #hello {
     image-rendering: auto;
@@ -388,13 +394,13 @@ h4 { font-size: 10px; }
     width: calc(100% - 20px);
     left: 0;
     bottom: 0;
-    background-color: rgba(0,0,0,0.40);
+    background-color: rgba(0, 0, 0, 0.4);
     text-align: center;
     text-decoration: none;
     color: #fff;
     opacity: 0;
     transition: opacity 0.5s;
-    backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px) contrast(1.5);
 }
 
 .box > figure:hover { box-shadow: 0px 0px 16px #FF99CC; }
@@ -408,7 +414,7 @@ h4 { font-size: 10px; }
 .caption {
     position: fixed;
     text-align: center;
-    bottom: 12px;
+    bottom: 48px;
     left: 0;
     margin: 0;
     padding: 0;
@@ -418,12 +424,12 @@ h4 { font-size: 10px; }
     text-shadow: 0px 0px 8px #FF99CC;
 }
 .caption > span {
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(25, 0, 35, 0.5);
     border-radius: 10px;
     border-width: 10px;
     border-color: rgba(0,0,0,0); /* css why do you do this to me */
     border-style: solid;
-    backdrop-filter: blur(4px); /* ash making sites be like excessive use of modern css features */
+    backdrop-filter: blur(4px) contrast(1.5); /* ash making sites be like excessive use of modern css features */
 }
 .caption > span > img {
     filter: drop-shadow(0px 0px 4px #FF99CC);
@@ -456,7 +462,7 @@ img.emoji {
 }
 
 /* mobile compatibility stuff */
-.navButton { /* normally invisible on desktop */
+.nav-button { /* normally invisible on desktop */
     position: fixed;
     top: 16px;
     left: -256px;
@@ -470,21 +476,21 @@ img.emoji {
     visibility: hidden;
 }
 
-.navButton > img {
+.nav-button > img {
     width: 32px;
     padding-right: 24px;
     filter: drop-shadow(0px 0px 6px #FF99CC);
     transition: filter 0.5s;
 }
 
-.navButton:hover > img {
+.nav-button:hover > img {
     filter: drop-shadow(0px 0px 6px #99ffee) drop-shadow(0px 0px 6px #99ffee);
 }
 
 @media only screen and (max-width: 600px) {
     .sidebar { left: -256px; transition: left 0.5s; }
     .page-content { width: calc(100vw - 32px); margin-left: 0px; padding-top: 82px; padding-right: 0px; transition: filter 0.5s; }
-    .navButton { left: 3px; transition: left 0.5s; visibility: visible; }
+    .nav-button { left: 3px; transition: left 0.5s; visibility: visible; }
     .card { width: calc(100vw - 64px); }
     #hello { max-width: 75vw; }
     #navOpen { filter: blur(4px) brightness(0.5); }
@@ -518,9 +524,9 @@ img.emoji {
     .card { max-width: 1280px; margin-top: 40px; border-radius: 10px; }
     .card > p { font-size: 48px; }
     .card-header { font-size: 60px; box-shadow: inset 0px -96px 48px -48px #000b13 }
-    .card-header > span > img { width: 64px; }
+    .card-header > span > img { width: 64px; image-rendering: auto; }
 
-    .icons > a > img { width: 64px; }
+    .icons > a > img { width: 48px; }
 
     #round-img { width: 64px; height: 64px; }
 
@@ -532,6 +538,9 @@ img.emoji {
     .box > figure > img { height: 492px; }
     .caption { font-size: 64px; }
     #lbl { font-size: 64px; line-height: 64px; }
+
+    .featherlight-close-icon { width: 50px!important; line-height: 50px!important; font-size: 32px; }
+    .featherlight-dl-icon { width: 50px!important; line-height: 50px!important; right: 50px!important; font-size: 32px; }
 
     h1, h2, h3, h4 { margin-left: -42px; padding-left: 42px; }
     h1 { font-size: 80px; }

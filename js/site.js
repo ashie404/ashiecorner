@@ -58,6 +58,21 @@ r = Math.floor(6*Math.random());
 $(".scroll-text").css('color', r_neon[r][0]);
 $(".scroll-text").css('textShadow', r_neon[r][1] + ' 0px 0px 6px');
 
+// days of the week uwu
+const d = new Date();
+let day = d.getDay();
+switch (day) {
+    case 1: // monday
+        $(".index-img").attr("src", "img/index1.png");
+        break;
+    case 3: // wednesday
+        $(".index-img").attr("src", "img/index3.png");
+        break;
+    default: //  fallback pic
+        $(".index-img").attr("src", "img/index1.png");
+        break;
+}
+
 // mobile nav swipe actions
 
 function navSwipeRight() {

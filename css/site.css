@@ -40,6 +40,8 @@ h1 { font-size: 40px; }
 h2 { font-size: 30px; }
 h3 { font-size: 20px; }
 h4 { font-size: 10px; }
+h1 > img { filter: drop-shadow(0px 0px 6px #FF99CC) }
+#err { background: linear-gradient(to right, rgb(102, 0, 0) 0%,rgb(102, 0, 0) 50%,#55006600 100%) }
 
 /* sidebar stuff */
 .sidebar {
@@ -151,6 +153,7 @@ h4 { font-size: 10px; }
     margin-right: auto;
     margin-bottom: -8px;
 }
+.center-badge > img { filter: drop-shadow(0px 0px 6px #8940ff) }
 
 .zenkitty {
     text-shadow: 0px 0px 6px #4263f5;
@@ -175,7 +178,7 @@ h4 { font-size: 10px; }
     margin-bottom: 8px;
     font-size: 32px;
 }
-.page-content > a {
+.page-content > a, .page-content > p > a {
     color: #99FFCC;
     text-shadow: 0px 0px 6px #99FFCC;
     font-size: 32px;
@@ -185,6 +188,10 @@ h4 { font-size: 10px; }
     font-size: 32px;
     list-style-type: square; /* fallback */
     list-style-image: url(../img/heart-bullet.png);
+}
+.page-content > ul > li {
+    line-height: 85%;
+    text-shadow: 0px 0px 6px #99FFCC;
 }
 
 #hello {
@@ -213,13 +220,15 @@ h4 { font-size: 10px; }
 .link > img {
     display: inline-block;
     vertical-align: middle;
+    border-radius: 6px;
 }
 
 /* is this excessive? yes. do i care? no. */
-#tw { filter: drop-shadow(0px 0px 4px #99c9ffcc); }
-#gh { filter: drop-shadow(0px 0px 4px #da99ffcc); }
-#yt { filter: drop-shadow(0px 0px 4px #ff9999cc); }
-#rd { filter: drop-shadow(0px 0px 4px #ffca99cc); }
+#tw { box-shadow: 0px 0px 6px #99c9ff; }
+#gh { box-shadow: 0px 0px 6px #da99ff; }
+#yt { box-shadow: 0px 0px 6px #ff9999; }
+#rd { box-shadow: 0px 0px 6px #ffca99; }
+#src { filter: drop-shadow(0px 0px 4px #99ffcc); }
 
 /* projects page cards */
 /* why did i have to put so much effort into these */
@@ -400,7 +409,7 @@ h4 { font-size: 10px; }
     color: #fff;
     opacity: 0;
     transition: opacity 0.5s;
-    backdrop-filter: blur(4px) contrast(1.5);
+    backdrop-filter: blur(4px);
 }
 
 .box > figure:hover { box-shadow: 0px 0px 16px #FF99CC; }
@@ -429,7 +438,7 @@ h4 { font-size: 10px; }
     border-width: 10px;
     border-color: rgba(0,0,0,0); /* css why do you do this to me */
     border-style: solid;
-    backdrop-filter: blur(4px) contrast(1.5); /* ash making sites be like excessive use of modern css features */
+    backdrop-filter: blur(4px); /* ash making sites be like excessive use of modern css features */
 }
 .caption > span > img {
     filter: drop-shadow(0px 0px 4px #FF99CC);
@@ -516,8 +525,12 @@ img.emoji {
 
     .page-content { margin-left: 512px; padding-left: 50px; width: calc(100vw - 620px); }
     .page-content > p { font-size: 64px; }
+    .page-content > a, .page-content > p > a { font-size: 64px; }
+    .page-content > ul { font-size: 64px; }
     .construction > img { width: 32px; }
     .subnote { font-size: 32px!important; }
+
+    .link > img { width: 64px; height: 64px; }
 
     #hello { width: 800px; }
 
@@ -547,4 +560,5 @@ img.emoji {
     h2 { font-size: 60px; }
     h3 { font-size: 40px; }
     h4 { font-size: 20px; }
+    h1 > img {width: 48px; height: 48px; }
 }

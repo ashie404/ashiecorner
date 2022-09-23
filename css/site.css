@@ -26,8 +26,6 @@ body {
     background-size: 128px;
 
     image-rendering: pixelated;
-
-    overflow-x: hidden;
 }
 h1, h2, h3, h4 {
     font-family: 'Pixelpoiiz';
@@ -566,5 +564,7 @@ img.emoji {
 
 /* to better fit large screens, double scale literally everything lmao */
 @media only screen and (min-width: 2048px) {
-    body { transform: scale(2.0) translate(25%, 25%); width: 50vw; height: 50vh; }
+    body { transform: scale(2.0) translate(25%, 25%); width: 50%; height: 50%; }
+
+    .page-content { width: calc(50vw - 310px); }
 }

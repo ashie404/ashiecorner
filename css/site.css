@@ -181,7 +181,6 @@ ul > li {
 
 /* page content rules */
 .page-content {
-    height: 100%;
     width: calc(100vw - 306px); /* god i love web development so much */
     height: calc(100vh - 50px);
     margin-left: 256px;

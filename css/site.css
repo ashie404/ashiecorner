@@ -26,6 +26,8 @@ body {
     background-size: 128px;
 
     image-rendering: pixelated;
+
+    overflow-y: hidden;
 }
 h1, h2, h3, h4 {
     font-family: 'Pixelpoiiz';
@@ -181,6 +183,7 @@ ul > li {
 .page-content {
     height: 100%;
     width: calc(100vw - 306px); /* god i love web development so much */
+    height: calc(100vh - 50px);
     margin-left: 256px;
     padding: 25px;
     color: white;
@@ -560,7 +563,7 @@ img.emoji {
 
 @media only screen and (max-width: 600px) {
     .sidebar { left: -256px; transition: left 0.5s; }
-    .page-content { width: calc(100vw - 32px); margin-left: 0px; padding-top: 82px; padding-right: 0px; transition: filter 0.5s; }
+    .page-content { width: calc(100vw - 32px); height: calc(100vh - 107px); margin-left: 0px; padding-top: 82px; padding-right: 0px; transition: filter 0.5s; }
     .nav-button { left: 3px; transition: left 0.5s; visibility: visible; }
     .card { width: calc(100vw - 64px); }
     #hello { max-width: 75vw; }
@@ -574,7 +577,7 @@ img.emoji {
 
 /* to better fit large screens, double scale literally everything lmao */
 @media only screen and (min-width: 2048px) {
-    body { transform: scale(2.0); transform-origin: top left; width: 50vw; height: 50vh; overflow-y: hidden; }
+    body { transform: scale(2.0); transform-origin: top left; width: 50vw; height: 50vh; }
 
     .page-content { width: calc(50vw - 306px); height: calc(50vh - 50px); }
     .sidebar { min-height: 50vh; height: 50vh; }

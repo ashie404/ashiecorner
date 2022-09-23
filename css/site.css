@@ -217,7 +217,7 @@ ul > li {
     filter: drop-shadow(0px 0px 6px #ffa366);
 }
 
-.subnote { font-size: 16px!important; } /* love you so much css <3 */
+.subnote { font-size: 22px!important; color: #c397d4; } /* love you so much css <3 */
 
 /* newsfeed stuff */
 .feed {
@@ -276,6 +276,9 @@ news:before {
     box-shadow: inset -2px -2px #e2b0ff, inset 2px 2px #3b044b, inset -4px -4px #ca86df, inset 4px 4px #783b80;
 }
 
+#rawfeed > img {
+    filter: drop-shadow(0px 0px 4px #99FFCC);
+}
 
 /* links page stuff */
 .link { text-decoration: none; }

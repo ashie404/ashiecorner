@@ -17,11 +17,11 @@
         <nav class="sidebar">
             <a href="index.html"><img class="index-img" src="img/index1.png" alt="Index"></a>
             <div class="text-scroller">
-                <marquee class="scroll-text" scrollamount="4" scrolldelay="2">JavaScript disabled or unsupported browser.</marquee>
+                <marquee class="scroll-text" scrollamount="4" scrolldelay="2">Enable JavaScript or update your browser~</marquee>
             </div>
             <p align="center">Ash's cozy corner of<br> the internet</p>
             <br>
-            <ul>
+            <ol>
                 <li><a href="about.html"><img src="img/heart.png"> about me</a></li>
                 <li><a href="art.html"><img src="img/art.png"> art</a></li>
                 <li><a href="music.html"><img src="img/music.png"> music</a></li>
@@ -29,7 +29,7 @@
                 <li><a href="links.html"><img src="img/links.png"> links</a></li>
                 <br>
                 <li aria-disabled="true"><a href="#"><img src="img/guestbook.png"> guestbook</a></li>
-            </ul>
+            </ol>
             <div class="sidebar-footer">
                 <a href="https://zencorner.xyz" class="center-badge"><img src="img/zencorner.png"></a>
                 <p align="center">Made with <img src="img/heart.png"><br> <span class="ashiekitty">Ashie</span> and <span class="zenkitty">Zenith</span>!</p>
@@ -47,17 +47,17 @@
             <p class="subnote">designed to be viewed at 1024x768 :3</p>
             <br>
             <h2>[ News + Updates ]</h2>
-            <p class="ashiekitty">site updates | 9-22-22</p>
-            <ul>
-                <li>added wednesday index image</li>
-                <li>added 404 page</li>
-                <li>added credits portion to links page</li>
-                <li>visual + performance improvements</li>
-            </ul>
+            <div class="feed">Enable JavaScript or update your browser to see newsfeed~</div>
         </div>
 
         <script type="text/javascript" src="js/jquery.min.js"></script>
         <script type="text/javascript" src="js/hammer.min.js"></script>
+        <script type="text/javascript" src="js/snarkdown.js"></script>
         <script type="text/javascript" src="js/site.min.js"></script>    
+
+        <!-- woo more inline js because i dont wanna make it sitewide -->
+        <script type="text/javascript">
+            feedGET();
+        </script> 
     </body>
 </html>

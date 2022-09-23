@@ -43,6 +43,17 @@ h4 { font-size: 10px; }
 h1 > img { filter: drop-shadow(0px 0px 6px #FF99CC) }
 #err { background: linear-gradient(to right, rgb(102, 0, 0) 0%,rgb(102, 0, 0) 50%,#55006600 100%) }
 
+ul {
+    margin: 0;
+    font-size: 32px;
+    list-style-type: square; /* fallback */
+    list-style-image: url(../img/heart-bullet.png);
+}
+ul > li {
+    line-height: 85%;
+    text-shadow: 0px 0px 6px #99FFCC;
+}
+
 /* sidebar stuff */
 .sidebar {
     z-index: 2;
@@ -72,7 +83,7 @@ h1 > img { filter: drop-shadow(0px 0px 6px #FF99CC) }
 }
 
 /* nav button stuff */
-.sidebar > ul {
+.sidebar > ol {
     list-style-type: none;
     margin: 0;
     margin-bottom: 16px;
@@ -81,32 +92,32 @@ h1 > img { filter: drop-shadow(0px 0px 6px #FF99CC) }
     font-size: 20px;
     flex: 1;
 }
-.sidebar > ul > li {
+.sidebar > ol > li {
     padding-top: 3px;
     padding-bottom: 3px;
     width: 100%;
 }
-.sidebar > ul > li:hover {
+.sidebar > ol > li:hover {
     background: #550066;
     background: linear-gradient(to bottom, #55006600 0%,#660061FF 50%,#55006600 100%);
     color: #FF99CC;
 }
-.sidebar > ul > li > a {
+.sidebar > ol > li > a {
     text-decoration: none;
     color: inherit;
     margin-left: 20px;
     text-shadow: 0px 0px 8px #FF99CC;
 }
-.sidebar > ul > li > a > img { /* if you're looking at this code i apologize lmfao */
+.sidebar > ol > li > a > img { /* if you're looking at this code i apologize lmfao */
     filter: drop-shadow(0px 0px 4px #FF99CC);
 }
 
-.sidebar > ul > li[aria-disabled="true"] > a {
+.sidebar > ol > li[aria-disabled="true"] > a {
     pointer-events: none;
     color: #ca9dbd;
     text-shadow: 0px 0px 8px #ff7b7b;
 }
-.sidebar > ul > li[aria-disabled="true"]:hover {
+.sidebar > ol > li[aria-disabled="true"]:hover {
     background: none;
     color: #ca9dbd;
 }
@@ -183,16 +194,6 @@ h1 > img { filter: drop-shadow(0px 0px 6px #FF99CC) }
     text-shadow: 0px 0px 6px #99FFCC;
     font-size: 32px;
 }
-.page-content > ul {
-    margin: 0;
-    font-size: 32px;
-    list-style-type: square; /* fallback */
-    list-style-image: url(../img/heart-bullet.png);
-}
-.page-content > ul > li {
-    line-height: 85%;
-    text-shadow: 0px 0px 6px #99FFCC;
-}
 
 #hello {
     image-rendering: auto;
@@ -212,6 +213,20 @@ h1 > img { filter: drop-shadow(0px 0px 6px #FF99CC) }
 }
 
 .subnote { font-size: 16px!important; } /* love you so much css <3 */
+
+/* newsfeed stuff */
+.feed {
+    margin-top: 8px;
+    font-size: 32px;
+}
+.feed > h1 {
+    background: none;
+    font-weight: 400;
+    font-family: 'Comicoro';
+    font-size: 32px;
+    text-shadow: 0px 0px 6px #8940ff;
+    color: #e0c2ff;
+}
 
 /* links page stuff */
 .link { text-decoration: none; }
@@ -510,13 +525,21 @@ img.emoji {
 
 /* to better fit large screens, double scale literally everything lmao */
 @media only screen and (min-width: 2048px) {
+    h1, h2, h3, h4 { margin-left: -42px; padding-left: 42px; }
+    h1 { font-size: 80px; }
+    h2 { font-size: 60px; }
+    h3 { font-size: 40px; }
+    h4 { font-size: 20px; }
+    h1 > img {width: 48px; height: 48px; }
+    ul { font-size: 64px; }
+
     .sidebar { width: 512px; background-size: 128px; border-right-width: 8px; }
     .sidebar > p { font-size: 64px; }
     .sidebar > a > img { width: 512px; }
     .text-scroller { height: 64px; }
     .scroll-text { font-size: 36px; line-height: 64px; }
-    .sidebar > ul { font-size: 40px; }
-    .sidebar > ul > li > a > img { width: 32px; }
+    .sidebar > ol { font-size: 40px; }
+    .sidebar > ol > li > a > img { width: 32px; }
     .sidebar-footer { width: 512px; }
     .sidebar-footer > p { font-size: 64px; }
     .sidebar-footer > p > img { width: 32px; }
@@ -526,11 +549,12 @@ img.emoji {
     .page-content { margin-left: 512px; padding-left: 50px; width: calc(100vw - 620px); }
     .page-content > p { font-size: 64px; }
     .page-content > a, .page-content > p > a { font-size: 64px; }
-    .page-content > ul { font-size: 64px; }
     .construction > img { width: 32px; }
     .subnote { font-size: 32px!important; }
 
     .link > img { width: 64px; height: 64px; }
+
+    .feed > h1 { font-size: 64px!important; }
 
     #hello { width: 800px; }
 
@@ -554,11 +578,4 @@ img.emoji {
 
     .featherlight-close-icon { width: 50px!important; line-height: 50px!important; font-size: 32px; }
     .featherlight-dl-icon { width: 50px!important; line-height: 50px!important; right: 50px!important; font-size: 32px; }
-
-    h1, h2, h3, h4 { margin-left: -42px; padding-left: 42px; }
-    h1 { font-size: 80px; }
-    h2 { font-size: 60px; }
-    h3 { font-size: 40px; }
-    h4 { font-size: 20px; }
-    h1 > img {width: 48px; height: 48px; }
 }

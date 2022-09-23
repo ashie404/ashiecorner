@@ -1,5 +1,10 @@
 // this poorly written javascript brought to you by a gay cat
 
+// newsfeed stuff (please hate me as much as possible for this code -Ash)
+function feedGET() {
+    fetch('newsfeed.md').then(response => response.text()).then(result => $('.feed').html(snarkdown(result)));
+}
+
 // mobile navbutton
 
 var navOpen = false;

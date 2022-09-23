@@ -40,7 +40,7 @@ h1 { font-size: 40px; }
 h2 { font-size: 30px; }
 h3 { font-size: 20px; }
 h4 { font-size: 10px; }
-h1 > img { filter: drop-shadow(0px 0px 6px #FF99CC) }
+h1#err > img { filter: drop-shadow(0px 0px 6px #FF99CC) }
 #err { background: linear-gradient(to right, rgb(102, 0, 0) 0%,rgb(102, 0, 0) 50%,#55006600 100%) }
 
 ul {
@@ -190,7 +190,7 @@ ul > li {
     margin-bottom: 8px;
     font-size: 32px;
 }
-.page-content > a, .page-content > p > a {
+.page-content > a, .page-content > p > a, .feed > ul > li > a {
     color: #99FFCC;
     text-shadow: 0px 0px 6px #99FFCC;
     font-size: 32px;
@@ -220,14 +220,15 @@ ul > li {
     margin-top: 8px;
     font-size: 32px;
 }
-.feed > h1 {
+.feed > h1, .feed > h2 {
     background: none;
     font-weight: 400;
     font-family: 'Comicoro';
     font-size: 32px;
-    text-shadow: 0px 0px 6px #8940ff;
-    color: #e0c2ff;
 }
+.feed > h1 { text-shadow: 0px 0px 6px #8940ff; color: #e0c2ff; }
+.feed > h2 { text-shadow: 0px 0px 6px #ffa366; color: #ffcca9; }
+
 
 /* links page stuff */
 .link { text-decoration: none; }
@@ -244,7 +245,6 @@ ul > li {
 #gh { box-shadow: 0px 0px 6px #da99ff; }
 #yt { box-shadow: 0px 0px 6px #ff9999; }
 #rd { box-shadow: 0px 0px 6px #ffca99; }
-#src { filter: drop-shadow(0px 0px 4px #99ffcc); }
 
 /* projects page cards */
 /* why did i have to put so much effort into these */
@@ -526,57 +526,5 @@ img.emoji {
 
 /* to better fit large screens, double scale literally everything lmao */
 @media only screen and (min-width: 2048px) {
-    h1, h2, h3, h4 { margin-left: -42px; padding-left: 42px; }
-    h1 { font-size: 80px; }
-    h2 { font-size: 60px; }
-    h3 { font-size: 40px; }
-    h4 { font-size: 20px; }
-    h1 > img {width: 48px; height: 48px; }
-    ul { font-size: 64px; }
-
-    .sidebar { width: 512px; background-size: 128px; border-right-width: 8px; }
-    .sidebar > p { font-size: 64px; }
-    .sidebar > a > img { width: 512px; }
-    .text-scroller { height: 64px; }
-    .scroll-text { font-size: 36px; line-height: 64px; }
-    .sidebar > ol { font-size: 40px; }
-    .sidebar > ol > li > a > img { width: 32px; }
-    .sidebar-footer { width: 512px; }
-    .sidebar-footer > p { font-size: 64px; }
-    .sidebar-footer > p > img { width: 32px; }
-    .sidebar-footer > p > a { font-size: 32px; }
-    .center-badge, .sidebar-footer > a > img { width: 198px; }
-
-    .page-content { margin-left: 512px; padding-left: 50px; width: calc(100vw - 620px); }
-    .page-content > p { font-size: 64px; }
-    .page-content > a, .page-content > p > a { font-size: 64px; }
-    .construction > img { width: 32px; }
-    .subnote { font-size: 32px!important; }
-
-    .link > img { width: 64px; height: 64px; }
-
-    .feed > h1 { font-size: 64px!important; }
-
-    #hello { width: 800px; }
-
-    .card { max-width: 1280px; margin-top: 40px; border-radius: 10px; }
-    .card > p { font-size: 48px; }
-    .card-header { font-size: 60px; box-shadow: inset 0px -96px 48px -48px #000b13 }
-    .card-header > span > img { width: 64px; image-rendering: auto; }
-
-    .icons > a > img { width: 48px; }
-
-    #round-img { width: 64px; height: 64px; }
-
-    #active, #inactive, #on-hold { font-size: 44px; border-top-right-radius: 30px; border-bottom-right-radius: 30px; }
-    #active > img, #inactive > img, #on-hold > img { width: 32px; }
-
-    .gallery { max-width: 1536px; }
-    .box { height: 512px; }
-    .box > figure > img { height: 492px; }
-    .caption { font-size: 64px; }
-    #lbl { font-size: 64px; line-height: 64px; }
-
-    .featherlight-close-icon { width: 50px!important; line-height: 50px!important; font-size: 32px; }
-    .featherlight-dl-icon { width: 50px!important; line-height: 50px!important; right: 50px!important; font-size: 32px; }
+    body { transform: scale(2.0) translate(25%, 25%); width: 50vw; height: 50vh; }
 }

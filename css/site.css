@@ -561,6 +561,8 @@ img.emoji {
 }
 
 @media only screen and (max-width: 600px) {
+    body { overflow-y: auto; }
+
     .sidebar { left: -256px; transition: left 0.5s; }
     .page-content { width: calc(100vw - 32px); height: calc(100vh - 107px); margin-left: 0px; padding-top: 82px; padding-right: 0px; transition: filter 0.5s; }
     .nav-button { left: 3px; transition: left 0.5s; visibility: visible; }

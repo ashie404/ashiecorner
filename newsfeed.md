@@ -1,5 +1,6 @@
 # <img src="img/update.png"> site updates | 9-22-22
 - added wednesday index image
+- added site news feed
 - added 404 page
 - added credits portion to links page
 - visual + performance improvements

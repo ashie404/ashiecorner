@@ -568,7 +568,7 @@ img.emoji {
     #hello { max-width: 75vw; }
     #navOpen { filter: blur(4px) brightness(0.5); }
 
-    .feed > h1, .feed > h2 { width: 100%; }
+    .feed > h1, .feed > h2 { width: inherit; }
 
     .featherlight-close-icon { width: 50px!important; line-height: 50px!important; font-size: 32px; }
     .featherlight-dl-icon { width: 50px!important; line-height: 50px!important; right: 50px!important; font-size: 32px; }

@@ -45,6 +45,7 @@ h1#err > img { filter: drop-shadow(0px 0px 6px #FF99CC) }
 
 ul {
     margin: 0;
+    padding-bottom: 16px;
     font-size: 32px;
     list-style-type: square; /* fallback */
     list-style-image: url(../img/heart-bullet.png);
@@ -221,13 +222,47 @@ ul > li {
     font-size: 32px;
 }
 .feed > h1, .feed > h2 {
-    background: none;
     font-weight: 400;
     font-family: 'Comicoro';
     font-size: 32px;
+    width: 65%;
+    margin-top: 8px;
 }
-.feed > h1 { text-shadow: 0px 0px 6px #8940ff; color: #e0c2ff; }
-.feed > h2 { text-shadow: 0px 0px 6px #ffa366; color: #ffcca9; }
+.feed > h1 { 
+    text-shadow: 0px 0px 6px #a974ff; 
+    color: #e0c2ff; 
+    background: linear-gradient(to right, #581672FF 0%,#3e1c75FF 50%,#3e1c7500 100%);
+}
+.feed > h2 { 
+    text-shadow: 0px 0px 6px #ffa366; 
+    color: #ffcca9; 
+    background: linear-gradient(to right, #661d00FF 0%,#663100FF 50%,#661d0000 100%);
+}
+.refresh-feed {
+    font-family: 'Comicoro';
+    font-size: 32px;
+    text-shadow: 0px 0px 4px #ffa366;
+    transition: text-shadow 0.5s;
+    color: #fff;
+    box-sizing: border-box;
+    border: none;
+    background: #8d40ac;
+    box-shadow: inset -2px -2px #3b044b, inset 2px 2px #e2b0ff, inset -4px -4px #783b80, inset 4px 4px #ca86df;
+    border-radius: 0;
+    
+    min-width: 75px;
+    min-height: 23px;
+    padding: 0 12px;
+    margin-top: 8px;
+    vertical-align: top;
+}
+.refresh-feed:hover {
+    text-shadow: 0px 0px 8px #ffa366, 0px 0px 8px #ffa366;
+}
+.refresh-feed:active {
+    background: #64287c;
+    box-shadow: inset -2px -2px #e2b0ff, inset 2px 2px #3b044b, inset -4px -4px #ca86df, inset 4px 4px #783b80;
+}
 
 
 /* links page stuff */

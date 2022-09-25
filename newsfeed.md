@@ -1,3 +1,6 @@
+# <update/> site updates! | 9-24-22
+- added other sites section to links page
+
 # <update/> site updates! | 9-23-22
 - less buggy large/small screen scaling
 - added raw newsfeed link

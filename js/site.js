@@ -25,9 +25,9 @@ function navButton() {
     navOpen = !navOpen;
 }
 
-$(function() {
-
 // randomized text stuff hehe :3
+// for some reason this works better outside of the document ready function
+// i have no idea
 var r_text = [
     "nyanyanya!",
     "sdfasdklfgsdfgsgoinrfoenlvbd",
@@ -49,6 +49,8 @@ var r_text = [
 var r = Math.floor(17*Math.random());
 
 $(".scroll-text").html(r_text[r]);
+
+$(function() {
 
 // randomized text colors
 var r_neon = [

@@ -1,4 +1,5 @@
 # <update/> site updates! | 9-24-22
+- fixed text marquee in sidebar
 - added other sites section to links page
 
 # <update/> site updates! | 9-23-22

@@ -1,15 +1,18 @@
 /* font family defs */
 @font-face {
     font-family: 'Comicoro'; /* 16px */
-    src: url(../fnt/comicoro.woff2);
+    src: url(../fnt/comicoro.woff2) format("woff2"),
+         url(../fnt/comicoro.ttf) format("truetype");
 }
 @font-face {
     font-family: 'Pixelpoiiz'; /* 10px */
-    src: url(../fnt/pixelpoiiz.woff2);
+    src: url(../fnt/pixelpoiiz.woff2) format("woff2"),
+         url(../fnt/pixelpoiiz.ttf) format("truetype");
 }
 @font-face {
     font-family: 'Scr18';
-    src: url(../fnt/Scr18.woff2);
+    src: url(../fnt/Scr18.woff2) format("woff2"),
+         url(../fnt/Scr18.ttf) format("truetype");
 }
 
 /* default html element overrides */

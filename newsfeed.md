@@ -1,4 +1,5 @@
 # <update/> site updates! | 9-25-22
+- about me page filled out
 - new web button added
 
 # <update/> site updates! | 9-24-22

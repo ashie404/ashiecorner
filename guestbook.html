@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>links - AshieCorner</title>
+        <title>guestbook - AshieCorner</title>
         <link rel="stylesheet" href="css/site.min.css">
         <link rel="icon" href="img/ashicon.png">
 
@@ -32,24 +32,25 @@
             <button class="nav-button" onclick="navButton()"><img src="img/menu.svg"></button>
         </nav>
         <div class="page-content">
-            <h1>Links</h1>
-            <br>
-            <a class="link" href="https://twitter.com/ashie404"><img id="tw" src="img/twitterico.png"> Twitter</a><br>
-            <a class="link" href="https://github.com/ashie404"><img id="gh" src="img/githubico.png"> GitHub</a><br>
-            <a class="link" href="https://www.youtube.com/c/Ashie404"><img id="yt" src="img/ytico.png"> YouTube</a><br>
-            <a class="link" href="https://www.reddit.com/user/joyesh"><img id="rd" src="img/redditico.png"> Reddit</a><br>
-            <a class="link"><img id="ds" src="img/discordico.png"> ashie#0404</a>
-            <br><br><br>
-            <h2>Other Cool Sites</h2>
-            <br>
-            <a href="https://sonc.neocities.org/"><img src="img/soncsvoid.gif" alt="Sonc's Void"></a>
-            <a href="https://kokoscript.com/"><img src="img/kokoscript.gif" alt="kokoscript"></a>
-            <a href="https://fluffybunski.neocities.org/"><img src="img/fluffybunski.gif" alt="Fluffy Bunski"></a>
-            <br><br>
-            <h1>Credits</h1>
-            <p>Uses <a href="https://jquery.com/">JQuery</a>, <a href="https://hammerjs.github.io/">Hammer.js</a> and <a href="https://noelboss.github.io/featherlight/">Featherlight</a>.<br>
-            Newsfeed uses <a href="https://github.com/developit/snarkdown">Snarkdown</a><br>
-            Icons: <a href="https://p.yusukekamiyamane.com/">Fugue Icons</a></p>
+            <h1>guestbook</h1>
+            <form class="guestbook" name="guestbook" netlify>
+                <p>
+                    <label id="name">Name <input type="text" name="name" /></label>
+                </p>
+                <flexbr></flexbr>
+                <p>
+                    <label id="email">Email <input type="email" name="email" /></label>
+                </p>
+                <flexbr></flexbr>
+                <p>
+                    <label id="message">Message</label>
+                    <textarea name="message"></textarea>
+                </p>
+                <flexbr></flexbr>
+                <p>
+                    <button type="submit">send</button>
+                </p>
+            </form> 
         </div>
 
         <script type="text/javascript" src="js/jquery.min.js"></script>

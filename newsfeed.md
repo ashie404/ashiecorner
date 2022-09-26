@@ -1,3 +1,6 @@
+# <update/> site updates! | 9-25-22
+- new web button added
+
 # <update/> site updates! | 9-24-22
 - fixed text marquee in sidebar
 - added other sites section to links page

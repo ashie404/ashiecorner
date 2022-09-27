@@ -33,22 +33,23 @@
         </nav>
         <div class="page-content">
             <h1>guestbook</h1>
-            <form class="guestbook" name="guestbook" netlify>
+            <form class="guestbook" name="guestbook" action="http://127.0.0.1:5000/pygb/api/postEntry" method="POST">
                 <p>
-                    <label id="name">Name <input type="text" name="name" /></label>
+                    <label id="name">Name</label>
+                    <input type="text" name="name" />
+                </p>
+                <p>
+                    <label id="email">Email</label>
+                    <input type="email" name="email" />
                 </p>
                 <flexbr></flexbr>
                 <p>
-                    <label id="email">Email <input type="email" name="email" /></label>
+                    <label id="message">Message<br><span class="subnote">140ch limit</span></label>
+                    <textarea name="message" spellcheck="false" maxlength="140"></textarea>
                 </p>
                 <flexbr></flexbr>
-                <p>
-                    <label id="message">Message</label>
-                    <textarea name="message"></textarea>
-                </p>
-                <flexbr></flexbr>
-                <p>
-                    <button type="submit">send</button>
+                <p id="postBtn">
+                    <button type="submit">post</button>
                 </p>
             </form> 
         </div>

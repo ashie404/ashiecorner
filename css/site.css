@@ -74,12 +74,13 @@ input, textarea {
     background-color: #102;
     font-family: Scr14;
     font-size: 14px;
-    border: 2px #505 inset;
+    border: 2px #860086 inset;
+    transition: border 0.3s, box-shadow 0.3s;
 }
 input:focus, textarea:focus {
     outline: none;
-    border: 2px #a0b outset;
-    box-shadow: 0px 0px 8px #f0b;
+    border: 2px #00bb8c solid;
+    box-shadow: 0px 0px 8px #6bffc6;
 }
 
 /* sidebar stuff */
@@ -571,23 +572,36 @@ flexbr {
     display: flex;
     flex-flow: row wrap;
     font-size: 32px;
+    max-width: 640px;
 }
+
 .guestbook > p {
     margin: 0;
     padding-top: 12px;
+    display: inline-flex;
+    flex: 1;
 }
-.guestbook > p > label { display: inline-flex }
-.guestbook > p > label > input {
-    margin: 4px;
-    margin-left: 12px;
+
+.guestbook > p > label { 
+    flex: none;
+    display: block;
+    width: 80px;
+    text-align: right;
+    padding-right: 8px;
+}
+.guestbook > p > label > span {
+    text-shadow: none;
+    bottom: 16px;
+    position: relative;
+}
+
+.guestbook > p > input {
+    display: block;
     flex: 1 0 auto;
-    width: 50vw;
-    max-width: 256px;
+    margin: 4px;
 }
 .guestbook > p > textarea {
     margin: 4px;
-    width: 40vw;
-    max-width: 256px;
     height: 64px;
     flex: 1 0 auto;
     box-sizing: border-box;
@@ -616,6 +630,7 @@ flexbr {
     background: #5e1955;
     box-shadow: inset -2px -2px #ff8bd9, inset 2px 2px #4b0433, inset -4px -4px #9d517d, inset 4px 4px #712356;
 }
+#postBtn { justify-content: right; margin-right: 4px }
 
 #name {
     color: #99FFCC;
@@ -667,8 +682,6 @@ flexbr {
     #navOpen { filter: blur(4px) brightness(0.5); }
 
     .feed > h1, .feed > h2 { width: inherit; }
-
-    .guestbook > p > textarea { width: 70vw; }
 
     .featherlight-close-icon { width: 50px!important; line-height: 50px!important; font-size: 32px; }
     .featherlight-dl-icon { width: 50px!important; line-height: 50px!important; right: 50px!important; font-size: 32px; }

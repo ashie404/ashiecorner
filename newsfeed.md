@@ -1,4 +1,5 @@
-# <update/> site updates! | 9-27-22
+# <update/> site updates! | 9-28-22
+- added software i use section to about me
 - added guestbook
 
 # <update/> site updates! | 9-25-22

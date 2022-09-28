@@ -1,4 +1,5 @@
 # <update/> site updates! | 9-28-22
+- added embeds to all pages, adjusted some page titles
 - improved guestbook card styling
 - added software i use section to about me
 - added guestbook

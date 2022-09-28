@@ -708,13 +708,14 @@ flexbr {
 
 /* alternating card theming bc why not uwu */
 .gbe:nth-child(odd) {
+    background-color: #1a001f;
     box-shadow: 0px 0px 8px #ff89ff;
 }
 .gbe:nth-child(odd):hover {
     box-shadow: 0px 0px 16px #ff89ff;
 }
 .gbe:nth-child(odd) > .gbe-header {
-    background: linear-gradient(to bottom,#3f183f, #000b13);
+    background: linear-gradient(to bottom,#3f183f, #1a001f);
 }
 .gbe:nth-child(odd) > .gbe-header > .gbe-timestamp {
     color: #da78dd;

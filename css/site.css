@@ -83,6 +83,12 @@ input:focus, textarea:focus {
     box-shadow: 0px 0px 8px #6bffc6;
 }
 
+hr {
+    color: #ad008a;
+    box-shadow: 0px 0px 8px #ff41b5;
+    border: 1.5px solid;
+}
+
 /* sidebar stuff */
 .sidebar {
     z-index: 2;
@@ -573,6 +579,7 @@ flexbr {
     flex-flow: row wrap;
     font-size: 32px;
     max-width: 640px;
+    margin-bottom: 32px;
 }
 
 .guestbook > p {
@@ -611,7 +618,7 @@ flexbr {
 .guestbook > p > button {
     font-family: 'Comicoro';
     font-size: 32px;
-    text-shadow: 0px 0px 4px #66ffc4;
+    text-shadow: 0px 0px 4px #9c94ff;
     transition: text-shadow 0.5s;
     color: #fff;
     box-sizing: border-box;
@@ -624,7 +631,7 @@ flexbr {
     min-height: 23px;
 }
 .guestbook > p > button:hover {
-    text-shadow: 0px 0px 6px #66ffc4, 0px 0px 8px #66ffc4;
+    text-shadow: 0px 0px 6px #9c94ff, 0px 0px 8px #9c94ff;
 }
 .guestbook > p > button:active {
     background: #5e1955;
@@ -645,6 +652,57 @@ flexbr {
     color: #fff;
     text-shadow: 0px 0px 6px #FF99CC;
 }
+
+/* guestbook entries */
+
+.gb-entries { margin-top: 32px; margin-right: 4px; }
+
+.gbe {
+    display: block;
+    background-color: #000b13;
+    border-radius: 5px;
+    max-width: 640px;
+    min-height: 96px;
+    margin-bottom: 16px;
+    font-size: 32px;
+
+    box-shadow: 0px 0px 8px #6bffc6;
+    transition: box-shadow 0.5s;
+}
+.gbe:hover {
+    box-shadow: 0px 0px 16px #6bffc6;
+}
+.gbe-header {
+    background: linear-gradient(to bottom,#0f412e, #000b13);
+    border-radius: 5px;
+}
+.gbe-header > p {
+    display: inline;
+    margin: 0;
+    text-shadow: 0px 0px 6px #FF99CC;
+}
+.gbe-name {
+    padding-left: 16px;
+    float: left;
+}
+.gbe-timestamp {
+    float: right;
+    padding-right: 16px;
+}
+.gbe-email {
+    display: block!important;
+    padding-left: 16px;
+    font-size: 14px;
+    font-family: Scr14;
+}
+.gbe > p {
+    margin: 16px;
+    font-size: 18px;
+    font-family: Scr18;
+    overflow-wrap: break-word;
+    padding-bottom: 16px;
+}
+
 
 
 /* mobile compatibility stuff */

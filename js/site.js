@@ -5,6 +5,28 @@ function feedGET() {
     fetch('newsfeed.md').then(response => response.text()).then(result => $('.feed').html(snarkdown(result)));
 }
 
+// guestbook stuff (please also criticize my terrible programming)
+function guestbookGET() {
+    fetch('http://127.0.0.1:5000/pygb/api/getEntries').then(response => response.json()).then(function(json) {
+        if (json) {
+            $('.gb-entries').html('');
+            var tmp = '';
+            $.each( json, function( key, value ) {
+                tmp += '<div class="gbe">';
+                tmp += '    <div class="gbe-header">';
+                tmp += '      <p class="gbe-name">' + value[0] + '</p>';
+                tmp += '      <p class="gbe-timestamp">' + value[3] + '</p><br>';        
+                tmp += '      <p class="gbe-email">' + value[1] + '</p>';
+                tmp += '    </div>';
+                tmp += '    <p>' + value[2] + '</p>';
+                tmp += '</div>';
+            });
+    
+            $('.gb-entries').prepend(tmp);
+        }
+    });
+}
+
 // mobile navbutton
 
 var navOpen = false;

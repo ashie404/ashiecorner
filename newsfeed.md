@@ -1,4 +1,5 @@
 # <update/> site updates! | 9-28-22
+- improved guestbook card styling
 - added software i use section to about me
 - added guestbook
 

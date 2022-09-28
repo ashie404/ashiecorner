@@ -688,12 +688,15 @@ flexbr {
 .gbe-timestamp {
     float: right;
     padding-right: 16px;
+    color: #45cea5;
+    text-shadow: 0 0 6px #6bffc6 !important;
 }
 .gbe-email {
     display: block!important;
     padding-left: 16px;
     font-size: 14px;
     font-family: Scr14;
+    color: #e59fff;
 }
 .gbe > p {
     margin: 16px;
@@ -703,7 +706,24 @@ flexbr {
     padding-bottom: 16px;
 }
 
-
+/* alternating card theming bc why not uwu */
+.gbe:nth-child(odd) {
+    box-shadow: 0px 0px 8px #ff89ff;
+}
+.gbe:nth-child(odd):hover {
+    box-shadow: 0px 0px 16px #ff89ff;
+}
+.gbe:nth-child(odd) > .gbe-header {
+    background: linear-gradient(to bottom,#3f183f, #000b13);
+}
+.gbe:nth-child(odd) > .gbe-header > .gbe-timestamp {
+    color: #da78dd;
+    text-shadow: 0 0 6px #ff89ff !important;
+}
+.gbe:nth-child(odd) > .gbe-header > .gbe-email {
+    color: #45cea5;
+    text-shadow: 0 0 6px #6bffc6 !important;
+}
 
 /* mobile compatibility stuff */
 .nav-button { /* normally invisible on desktop */

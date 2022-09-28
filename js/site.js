@@ -7,7 +7,12 @@ function feedGET() {
 
 // guestbook stuff (please also criticize my terrible programming)
 function guestbookGET() {
-    fetch('https://22ba-66-68-159-21.ngrok.io/pygb/api/getEntries').then(response => response.json()).then(function(json) {
+    fetch('https://22ba-66-68-159-21.ngrok.io/pygb/api/getEntries',  {
+        method: "get",
+        headers: new Headers({
+          "ngrok-skip-browser-warning": "1",
+        }),
+      }).then(response => response.json()).then(function(json) {
         if (json) {
             $('.gb-entries').html('');
             var tmp = '';

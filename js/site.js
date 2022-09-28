@@ -7,7 +7,7 @@ function feedGET() {
 
 // guestbook stuff (please also criticize my terrible programming)
 function guestbookGET() {
-    fetch('https://22ba-66-68-159-21.ngrok.io/pygb/api/getEntries',  {
+    fetch('https://acaa-66-68-159-21.ngrok.io/pygb/api/getEntries',  {
         method: "get",
         headers: new Headers({
           "ngrok-skip-browser-warning": "1",

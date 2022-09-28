@@ -7,7 +7,7 @@ function feedGET() {
 
 // guestbook stuff (please also criticize my terrible programming)
 function guestbookGET() {
-    fetch('https://api.ashiecorner.xyz/pygb/api/getEntries').then(response => response.json()).then(function(json) {
+    fetch('https://api.ashiecorner.xyz/pygb/api/getEntries/ashiecorner').then(response => response.json()).then(function(json) {
         if (json) {
             $('.gb-entries').html('');
             var tmp = '';

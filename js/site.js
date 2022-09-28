@@ -7,7 +7,7 @@ function feedGET() {
 
 // guestbook stuff (please also criticize my terrible programming)
 function guestbookGET() {
-    fetch('http://127.0.0.1:5000/pygb/api/getEntries').then(response => response.json()).then(function(json) {
+    fetch('https://cfa8-66-68-159-21.ngrok.io/pygb/api/getEntries').then(response => response.json()).then(function(json) {
         if (json) {
             $('.gb-entries').html('');
             var tmp = '';

@@ -52,8 +52,8 @@
                 </p>
                 <flexbr></flexbr>
                 <p>
-                    <label id="message">Message<br><span class="subnote">140ch limit</span></label>
-                    <textarea name="message" spellcheck="false" maxlength="140"></textarea>
+                    <label id="message">Message<br><span class="subnote charlim">140</span></label>
+                    <textarea id="msg" name="message" spellcheck="false" maxlength="140"></textarea>
                 </p>
                 <flexbr></flexbr>
                 <p id="postBtn">
@@ -69,6 +69,11 @@
         <script type="text/javascript" src="js/jquery.min.js"></script>
         <script type="text/javascript" src="js/hammer.min.js"></script>
         <script type="text/javascript" src="js/site.min.js"></script>    
-        <script type="text/javascript">guestbookGET()</script>
+        <script type="text/javascript">
+            guestbookGET();
+            $("#msg").keyup(function(){
+                $(".charlim").text(140 - $(this).val().length);
+            });
+        </script>
     </body>
 </html>

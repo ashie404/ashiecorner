@@ -1,3 +1,6 @@
+# <update/> site updates! | 10-2-22
+- added my tech section to about
+
 # <update/> site updates! | 10-1-22
 - guestbook times now appear in local timezone and time format
 

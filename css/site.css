@@ -89,6 +89,79 @@ hr {
     border: 1.5px solid;
 }
 
+/* my tech stuff */
+table { 
+    max-width: 720px;  
+    border: 4px ridge #da006d;
+    background-color: #310019;
+    border-collapse: collapse;
+    box-shadow: 0px 0px 8px #D06;
+}
+tbody, th, td {
+    border: 2px solid #850042;
+    padding: 6px;
+}
+th { 
+    background-color: #310019;
+    background-image: url('../img/dither-header.png');
+    font-size: 32px; 
+    text-shadow: 0px 0px 8px #F9C; 
+    border: none;
+}
+td {
+    font-size: 24px;
+}
+td#ico { text-align: center }
+td > img {
+    filter: drop-shadow(0px 0px 4px #F9C);
+    width: 32px;
+    vertical-align: middle;
+}
+.parts {
+    max-height: 0;
+    transition: max-height 0.5s;
+    overflow: hidden;
+}
+.parts > ul { padding: 0; list-style-type: none; list-style-image: none;}
+.parts > ul > li {
+    font-size: 24px;
+    text-shadow: none;
+}
+.parts > ul > li > img {
+    filter: drop-shadow(0px 0px 2px #F9C);
+}
+
+.partsbtn::before {
+    content: '▶  ';
+    font-size: 16px;
+}
+.partsbtn[open]::before {
+    content: '▼  ';
+}
+
+.partsbtn {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    border: none;
+    background-color: none;
+    font-family: Comicoro;
+    font-size: 32px;
+    text-align: left;
+    background-color: #850042;
+    color: #FFF;
+    transition: color 0.5s, text-shadow 0.5s;
+    margin-left: -6px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-bottom: 8px;
+}
+.partsbtn:hover {
+    color: #f8c5ff;
+    text-shadow: 0px 0px 8px #E9F;
+}
+
+
 /* sidebar stuff */
 .sidebar {
     z-index: 2;

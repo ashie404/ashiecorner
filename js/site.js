@@ -41,6 +41,31 @@ async function guestbookGET() {
     }
 }
 
+// parts menus shit
+var p0o = false;
+function p0Open() {
+    if (p0o) {
+        $('#parts-0').css('maxHeight', '0');
+        $('#pbtn-0').attr('open', null);
+    } else {
+        $('#parts-0').css('maxHeight', $('#parts-0').prop('scrollHeight'));
+        $('#pbtn-0').attr('open', '1');
+    }
+    p0o = !p0o;
+}
+var p1o = false;
+function p1Open() {
+    if (p1o) {
+        $('#parts-1').css('maxHeight', '0');
+        $('#pbtn-1').attr('open', null);
+    } else {
+        $('#parts-1').css('maxHeight', $('#parts-1').prop('scrollHeight'));
+        $('#pbtn-1').attr('open', '1');
+    }
+    p1o = !p1o;
+}
+
+
 // mobile navbutton
 
 var navOpen = false;

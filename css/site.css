@@ -91,7 +91,8 @@ hr {
 
 /* my tech stuff */
 .tdiv { overflow: auto; max-width: 100%; }
-table { 
+table {
+    min-width: 480px;
     max-width: 720px;  
     border: 4px ridge #da006d;
     background-color: #310019;

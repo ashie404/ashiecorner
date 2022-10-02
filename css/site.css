@@ -112,12 +112,14 @@ th {
 td {
     font-size: 24px;
 }
-td#ico { text-align: center }
 td > img {
-    filter: drop-shadow(0px 0px 4px #F9C);
     width: 32px;
     vertical-align: middle;
 }
+td#ico { text-align: center; filter: drop-shadow(0px 0px 4px #F9C); }
+td#icoT { text-align: center; filter: drop-shadow(0px 0px 3px #6f6); }
+td#icoX { text-align: center; filter: drop-shadow(0px 0px 3px #f55); }
+
 .parts {
     max-height: 0;
     transition: max-height 0.5s;
@@ -147,11 +149,11 @@ td > img {
     border: none;
     background-color: none;
     font-family: Comicoro;
-    font-size: 32px;
+    font-size: 24px;
     text-align: left;
     background-color: #850042;
     color: #FFF;
-    transition: color 0.5s, text-shadow 0.5s;
+    transition: color 0.3s, text-shadow 0.3s;
     margin-left: -6px;
     padding-left: 12px;
     padding-right: 12px;

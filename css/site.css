@@ -90,6 +90,7 @@ hr {
 }
 
 /* my tech stuff */
+.tdiv { overflow: auto; max-width: 100%; }
 table { 
     max-width: 720px;  
     border: 4px ridge #da006d;

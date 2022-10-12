@@ -809,6 +809,11 @@ flexbr {
     text-shadow: 0 0 6px #6bffc6 !important;
 }
 
+.web-buttons > a {
+    display: inline;
+    margin-right: -4px;
+}
+
 /* mobile compatibility stuff */
 .nav-button { /* normally invisible on desktop */
     position: fixed;

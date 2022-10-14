@@ -106,8 +106,10 @@ var r_text = [
     "Puerto Amongalas",
     "awawawawa,,",
     "The included spork is certainly the utensil of all time",
-    "jraphic desijn"];
-var r = Math.floor(17*Math.random());
+    "jraphic desijn",
+    '<img src="img/Theta-delta.svg" width="32px" alt="ΘΔ">'
+];
+var r = Math.floor(18*Math.random());
 
 $(".scroll-text").html(r_text[r]);
 

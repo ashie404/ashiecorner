@@ -102,14 +102,15 @@ var r_text = [
     "mawwwwsssssss,,,,,",
     "sonic robo blsat 7",
     "Fun fact: I invented the sun",
-    "<3 Zenith",
+    "I love my Zenith <3",
     "Puerto Amongalas",
     "awawawawa,,",
     "The included spork is certainly the utensil of all time",
     "jraphic desijn",
+    "any weather is skirt weather if you aren't a bitch",
     '<img src="img/Theta-delta.svg" width="32px" alt="ΘΔ">'
 ];
-var r = Math.floor(18*Math.random());
+var r = Math.floor(19*Math.random());
 
 $(".scroll-text").html(r_text[r]);
 

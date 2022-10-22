@@ -447,6 +447,8 @@ news:before {
     background: linear-gradient(to right, #3f183f, #0f412e);
     text-shadow: 0px 0px 8px #FF99CC;
     box-shadow: inset 0px -48px 24px -24px #000b13;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 .card-header > span {
     width: 75%;

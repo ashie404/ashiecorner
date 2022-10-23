@@ -1,3 +1,6 @@
+## <news/> melon shaders v2.4 released! | 10-23-22
+- full changelog and download [here](https://github.com/ashie404/MelonShaders/releases/tag/v2.4)
+
 # <update/> site updates! | 10-2-22
 - added my tech section to about
 

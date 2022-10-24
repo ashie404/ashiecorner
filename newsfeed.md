@@ -1,3 +1,6 @@
+# <update/> site updates! | 10-24-22
+- added melon banner to project card
+
 ## <news/> melon shaders v2.4 released! | 10-23-22
 - full changelog and download [here](https://github.com/ashie404/MelonShaders/releases/tag/v2.4)
 

@@ -827,10 +827,13 @@ flexbr {
     margin-right: -4px;
 }
 
-#mcaptcha__widget-container {
-    justify-items: right;
+iframe {
+    border: none;
+    margin-right: 4px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 12px #b942b9;
+    margin-top: 8px;
 }
-
 
 /* mobile compatibility stuff */
 .nav-button { /* normally invisible on desktop */

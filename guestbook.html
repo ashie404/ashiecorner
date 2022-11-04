@@ -64,6 +64,8 @@
                 <p id="postBtn">
                     <button type="submit">Sign</button>
                 </p>
+                <input id="caphash" type="hidden" name="captcha-hash">
+                <input id="captex" type="hidden" name="captcha-text">
             </form> 
             <hr>
             <div class="gb-entries">
@@ -79,6 +81,15 @@
             $("#msg").keyup(function(){
                 $(".charlim").text(140 - $(this).val().length);
             });
+            window.addEventListener("message", (event) => {
+                if (event.origin !== "https://api.ashiecorner.xyz/")
+                    return;
+                if (event.data['0'] == '0') {
+                    $('#captex').val(event.data.substr(1));
+                } else if (event.data['0'] == '1') {
+                    $('#caphash').val(event.data.substr(1));
+                }
+            }, false);
         </script>
     </body>
 </html>

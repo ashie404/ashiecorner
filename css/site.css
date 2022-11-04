@@ -827,6 +827,11 @@ flexbr {
     margin-right: -4px;
 }
 
+#mcaptcha__widget-container {
+    justify-items: right;
+}
+
+
 /* mobile compatibility stuff */
 .nav-button { /* normally invisible on desktop */
     position: fixed;

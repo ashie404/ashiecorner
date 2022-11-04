@@ -11,12 +11,19 @@
         <div class="page-content">
             <p>AshieCorner API</p>
             <h1 id="err">API Error</h1>
-            <p>Your API request has failed.</p>
+            <p id="errTxt">Your API request has failed.</p>
         </div>
 
         <script type="text/javascript" src="js/jquery.min.js"></script>
         <script type="text/javascript" src="js/hammer.min.js"></script>
         <script type="text/javascript" src="js/snarkdown.js"></script>
         <script type="text/javascript" src="js/site.min.js"></script>    
+        <script type="text/javascript">
+            let params = (new URL(document.location)).searchParams;
+            let errorCode = params.get("code");
+            let errorTxt = params.get("error");
+            $('#err').text('API Error - ' + errorCode);
+            $('#errTxt').text('Your API request has failed. Details: errorTxt');
+        </script>
     </body>
 </html>

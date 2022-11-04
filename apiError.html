@@ -3,14 +3,17 @@
     <head>
         <title>welcome to AshieCorner!</title>
         <link rel="stylesheet" href="css/site.min.css">
+        <style>
+            .page-content {margin-left: 0px;}
+        </style>
         <link rel="icon" href="img/ashicon.png">
 
         <meta name="viewport" content="width=device-width, initial-scale=1" />
     </head>
     <body>
         <div class="page-content">
-            <p>AshieCorner API</p>
-            <h1 id="err">API Error</h1>
+            <p>AshieCorner API :3c</p>
+            <h1 id="err"> API Error</h1>
             <p id="errTxt">Your API request has failed.</p>
         </div>
 
@@ -22,7 +25,7 @@
             let params = (new URL(document.location)).searchParams;
             let errorCode = params.get("code");
             let errorTxt = params.get("error");
-            $('#err').text('API Error - ' + errorCode);
+            $('#err').text(' API Error - ' + errorCode);
             $('#errTxt').text('Your API request has failed. Details: ' + errorTxt);
         </script>
     </body>

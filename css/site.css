@@ -849,6 +849,8 @@ iframe {
     margin-left: 16px;
     text-shadow: 0 0 6px #ff314e;
     color: #FBB;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 .errorNotif > a {
     text-decoration: none;

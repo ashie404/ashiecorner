@@ -844,7 +844,9 @@ iframe {
     margin-bottom: 8px;
     box-shadow: 0px 0px 8px #740a18;
 }
-.errorNotif > span {
+.errorNotif > p {
+    float: left;
+    display: inline-block;
     margin-left: 16px;
     text-shadow: 0 0 6px #ff314e;
     color: #FBB;
@@ -852,10 +854,13 @@ iframe {
 .errorNotif > a {
     text-decoration: none;
     float: right;
+    display: inline;
     margin-right: 16px;
     color: #FAC;
     text-shadow: 0 0 6px #ff314e;
     transition: 0.5s;
+    bottom: 52px;
+    position:relative;
 }
 .errorNotif > a:hover {
     float: right;

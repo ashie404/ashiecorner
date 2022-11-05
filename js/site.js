@@ -125,7 +125,7 @@ $(".post-button").click(function() {
            guestbookGET();
        },
        error: function(xhr, status, error) {
-           $("<div>").attr('class', 'errorNotif').append('<span>' + xhr.responseJSON['code'] + ': ' + xhr.responseJSON['description'] + '</span>').append('<a onclick="$(this).parent().remove()" href="#">X</a>').insertAfter($("#errAfter"))
+           $("<div>").attr('class', 'errorNotif').append('<p>' + xhr.responseJSON['code'] + ': ' + xhr.responseJSON['description'] + '</p>').append('<a onclick="$(this).parent().remove()" href="#">X</a>').insertAfter($("#errAfter"))
        }
     });
      

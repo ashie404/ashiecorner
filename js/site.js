@@ -114,6 +114,24 @@ var r = Math.floor(19*Math.random());
 
 $(".scroll-text").html(r_text[r]);
 
+$(".post-button").click(function() {
+    var url = "https://api.ashiecorner.xyz/pygb/api/postEntry/ashiecorner"; // the script where you handle the form input.
+
+    $.ajax({
+       type: "POST",
+       url: url,
+       data: $(".guestbook").serialize(),
+       success: function(data) {
+           guestbookGET();
+       },
+       error: function(xhr, status, error) {
+           $("<div>").attr('class', 'errorNotif').append('<span>' + xhr.responseJSON['code'] + ': ' + xhr.responseJSON['description'] + '</span>').append('<a onclick="$(this).parent().remove()" href="#">X</a>').insertAfter($("#errAfter"))
+       }
+    });
+     
+    return false; // avoid to execute the actual submit of the form.
+});
+
 $(function() {
 
 // randomized text colors

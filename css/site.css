@@ -838,7 +838,7 @@ iframe {
 .errorNotif {
     font-size: 32px;
     background-color: #4a0000;
-    border-radius: 64px;
+    border-radius: 8px;
     max-width: 640px;
     background: linear-gradient(to right, #4a0000, #952036);
     margin-bottom: 8px;

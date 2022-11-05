@@ -123,6 +123,7 @@ $(".post-button").click(function() {
        data: $(".guestbook").serialize(),
        success: function(data) {
            guestbookGET();
+           $('iframe').attr('src', 'https://api.ashiecorner.xyz/captcha/ashiecorner');
        },
        error: function(xhr, status, error) {
            $("<div>").attr('class', 'errorNotif').append('<p>' + xhr.responseJSON['code'] + ': ' + xhr.responseJSON['description'] + '</p>').append('<a onclick="$(this).parent().remove()" href="#">X</a>').insertAfter($("#errAfter"))

@@ -109,9 +109,10 @@ var r_text = [
     "jraphic desijn",
     "any weather is skirt weather if you aren't a bitch",
     '<img src="img/Theta-delta.svg" width="32px" alt="ΘΔ">',
-    'incredible　　　　　　　it is spinning'
+    'incredible　　　　　　　it is spinning',
+    'this patch of snow is comprised of more than 14 snow'
 ];
-var r = Math.floor(20*Math.random());
+var r = Math.floor(21*Math.random());
 
 $(".scroll-text").html(r_text[r]);
 

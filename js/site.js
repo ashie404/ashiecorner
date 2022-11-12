@@ -108,9 +108,10 @@ var r_text = [
     "The included spork is certainly the utensil of all time",
     "jraphic desijn",
     "any weather is skirt weather if you aren't a bitch",
-    '<img src="img/Theta-delta.svg" width="32px" alt="ΘΔ">'
+    '<img src="img/Theta-delta.svg" width="32px" alt="ΘΔ">',
+    'incredible　　　　　　　it is spinning'
 ];
-var r = Math.floor(19*Math.random());
+var r = Math.floor(20*Math.random());
 
 $(".scroll-text").html(r_text[r]);
 

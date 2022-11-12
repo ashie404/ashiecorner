@@ -114,25 +114,85 @@ var r_text = [
     'Although many have speculated the moon is made of cheese, the moon is not real.',
     'i love spreading misinformation on the internet <3',
     'no two snowflakes are the same unless you have a snow duplicator',
-    'gordan freeman　　　he does it <img src="img/goodjob.webp" alt="goodjob" width="16px">'
+    'gordan freeman　　　he does it <img src="img/goodjob.webp" alt="goodjob" width="16px">',
+    'I <3 pastel gore,,'
 ];
-var r = Math.floor(25*Math.random());
+var r = Math.floor(26*Math.random());
 
 $(".scroll-text").html(r_text[r]);
 
 $(".post-button").click(function() {
-    var url = "https://api.ashiecorner.xyz/pygb/api/postEntry/ashiecorner"; // the script where you handle the form input.
-
     $.ajax({
        type: "POST",
-       url: url,
+       url: "https://api.ashiecorner.xyz/pygb/api/postEntry/ashiecorner",
        data: $(".guestbook").serialize(),
        success: function(data) {
            guestbookGET();
-           $('iframe').attr('src', 'https://api.ashiecorner.xyz/captcha/ashiecorner');
+           $('.captcha-frame').attr('src', 'https://api.ashiecorner.xyz/captcha/ashiecorner'); // reset captcha
+           $('.captcha-frame').css('box-shadow', ''); // reset shadow
+           $('.errorNotif').each(function(i, obj) { obj.remove(); }); // clear error notifications
+           $('input[name="name"]').css('border', ''); // I am   programming
+           $('input[name="name"]').css('box-shadow', '');
+           $('input[name="name"]').css('outline', '');
+           $('input[name="message"]').css('border', '');
+           $('input[name="message"]').css('box-shadow', '');
+           $('input[name="message"]').css('outline', '');
+           $('input[name="email"]').css('border', '');
+           $('input[name="email"]').css('box-shadow', '');
+           $('input[name="email"]').css('outline', '');
        },
        error: function(xhr, status, error) {
            $("<div>").attr('class', 'errorNotif').append('<p>' + xhr.responseJSON['code'] + ': ' + xhr.responseJSON['description'] + '</p>').append('<a onclick="$(this).parent().remove()" href="#">X</a>').insertAfter($("#errAfter"))
+           switch (xhr.responseJSON['description']) { // the jank of ever
+            case "Invalid captcha.":
+                $('input[name="name"]').css('border', ''); 
+                $('input[name="name"]').css('box-shadow', '');
+                $('input[name="name"]').css('outline', '');
+                $('textarea[name="message"]').css('border', '');
+                $('textarea[name="message"]').css('box-shadow', '');
+                $('textarea[name="message"]').css('outline', '');
+                $('input[name="email"]').css('border', '');
+                $('input[name="email"]').css('box-shadow', '');
+                $('input[name="email"]').css('outline', '');
+                $('.captcha-frame').attr('src', 'https://api.ashiecorner.xyz/captcha/ashiecorner'); // reset captcha
+                $('.captcha-frame').css('box-shadow', '0px 0px 12px #ff3939'); // make captcha have red shadow to show what went wrong
+                break;
+            case "Name missing/too long.":
+                $('input[name="name"]').css('border', '2px #d51616 solid'); // BREAKING NEWS: local programmer is bad at programming
+                $('input[name="name"]').css('box-shadow', '0 0 8px #ff3737');
+                $('input[name="name"]').css('outline', '0');
+                $('textarea[name="message"]').css('border', '');
+                $('textarea[name="message"]').css('box-shadow', '');
+                $('textarea[name="message"]').css('outline', '');
+                $('input[name="email"]').css('border', '');
+                $('input[name="email"]').css('box-shadow', '');
+                $('input[name="email"]').css('outline', '');
+                break;
+            case "Message missing/too long.":
+                $('textarea[name="message"]').css('border', '2px #d51616 solid');
+                $('textarea[name="message"]').css('box-shadow', '0 0 8px #ff3737');
+                $('textarea[name="message"]').css('outline', '0');
+                $('input[name="name"]').css('border', '');
+                $('input[name="name"]').css('box-shadow', '');
+                $('input[name="name"]').css('outline', '');
+                $('input[name="email"]').css('border', '');
+                $('input[name="email"]').css('box-shadow', '');
+                $('input[name="email"]').css('outline', '');
+                break;
+            case "Invalid email.":
+                $('input[name="email"]').css('border', '2px #d51616 solid');
+                $('input[name="email"]').css('box-shadow', '0 0 8px #ff3737');
+                $('input[name="email"]').css('outline', '0');
+                $('input[name="name"]').css('border', '');
+                $('input[name="name"]').css('box-shadow', '');
+                $('input[name="name"]').css('outline', '');
+                $('textarea[name="message"]').css('border', '');
+                $('textarea[name="message"]').css('box-shadow', '');
+                $('textarea[name="message"]').css('outline', '');
+                break;
+            default:
+                break;
+           }
        }
     });
      
@@ -150,7 +210,6 @@ var r_neon = [
     ["#ffffff", "#FF99CC"],
     ["#ff9e9e", "#ff7777"]];
 r = Math.floor(6*Math.random());
-
 $(".scroll-text").css('color', r_neon[r][0]);
 $(".scroll-text").css('textShadow', r_neon[r][1] + ' 0px 0px 6px');
 

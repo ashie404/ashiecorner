@@ -110,9 +110,12 @@ var r_text = [
     "any weather is skirt weather if you aren't a bitch",
     '<img src="img/Theta-delta.svg" width="32px" alt="ΘΔ">',
     'incredible　　　　　　　it is spinning',
-    'this patch of snow is comprised of more than 14 snow'
+    'this patch of snow is comprised of more than 14 snow',
+    'Although many have speculated the moon is made of cheese, the moon is not real.',
+    'i love spreading misinformation on the internet <3',
+    'no two snowflakes are the same unless you have a snow duplicator'
 ];
-var r = Math.floor(21*Math.random());
+var r = Math.floor(24*Math.random());
 
 $(".scroll-text").html(r_text[r]);
 

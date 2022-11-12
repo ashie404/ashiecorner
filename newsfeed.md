@@ -1,3 +1,6 @@
+# <update/> site updates! | 11-12-22
+- added a lot more random marquee texts
+
 # <update/> site updates! | 10-24-22
 - added melon banner to project card
 

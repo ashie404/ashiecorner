@@ -109,13 +109,14 @@ var r_text = [
     "jraphic desijn",
     "any weather is skirt weather if you aren't a bitch",
     '<img src="img/Theta-delta.svg" width="32px" alt="ΘΔ">',
-    'incredible　　　　　　　it is spinning',
+    '<img src="img/incrediblespinning.gif" width="16px" title="it is spinning">incredible　　　　　　　it is spinning',
     'this patch of snow is comprised of more than 14 snow',
     'Although many have speculated the moon is made of cheese, the moon is not real.',
     'i love spreading misinformation on the internet <3',
-    'no two snowflakes are the same unless you have a snow duplicator'
+    'no two snowflakes are the same unless you have a snow duplicator',
+    'gordan freeman　　　he does it <img src="img/goodjob.webp" alt="goodjob" width="16px">'
 ];
-var r = Math.floor(24*Math.random());
+var r = Math.floor(25*Math.random());
 
 $(".scroll-text").html(r_text[r]);
 

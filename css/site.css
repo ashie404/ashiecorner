@@ -976,7 +976,7 @@ iframe.captcha-frame {
     filter: drop-shadow(0px 0px 6px #99ffee) drop-shadow(0px 0px 6px #99ffee);
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 640px) {
     .sidebar { left: -256px; transition: left 0.5s; }
     .page-content { width: calc(100vw - 32px); margin-left: 0px; padding-top: 120px; padding-right: 0px; transition: filter 0.5s; }
     .nav-button { left: 3px; transition: left 0.5s; visibility: visible; }

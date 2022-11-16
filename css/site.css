@@ -82,6 +82,11 @@ input:focus, textarea:focus {
     border: 2px #00bb8c solid;
     box-shadow: 0px 0px 8px #6bffc6;
 }
+input.error, textarea.error {
+    border: 2px #d51616 solid; 
+    box-shadow: 0 0 8px #ff3737; 
+    outline: none;
+}
 
 hr {
     color: #ad008a;

@@ -1,3 +1,7 @@
+# <update/> gay gay homosexual gay | 11-16-22
+- improved virtual taskbar appearance
+- optimized guestbook frontend code
+
 # <update/> meowmeow updatess | 11-15-22
 - added new windows-7 style virtual taskbar for mobile navigation
 - marquee text is now more visible on mobile

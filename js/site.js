@@ -128,68 +128,42 @@ $(".post-button").click(function() {
        url: "https://api.ashiecorner.xyz/pygb/api/postEntry/ashiecorner",
        data: $(".guestbook").serialize(),
        success: function(data) {
-           guestbookGET();
-           $('.captcha-frame').attr('src', 'https://api.ashiecorner.xyz/captcha/ashiecorner'); // reset captcha
-           $('.captcha-frame').css('box-shadow', ''); // reset shadow
-           $('.errorNotif').each(function(i, obj) { obj.remove(); }); // clear error notifications
-           $('input[name="name"]').css('border', ''); // I am   programming
-           $('input[name="name"]').css('box-shadow', '');
-           $('input[name="name"]').css('outline', '');
-           $('input[name="message"]').css('border', '');
-           $('input[name="message"]').css('box-shadow', '');
-           $('input[name="message"]').css('outline', '');
-           $('input[name="email"]').css('border', '');
-           $('input[name="email"]').css('box-shadow', '');
-           $('input[name="email"]').css('outline', '');
+            guestbookGET();
+            $('.captcha-frame').attr('src', 'https://api.ashiecorner.xyz/captcha/ashiecorner'); // reset captcha
+            $('.captcha-frame').css('box-shadow', ''); // reset shadow
+            $('.errorNotif').each(function(i, obj) { obj.remove(); }); // clear error notifications
+            $('input[name="name"]').removeClass('error');
+            $('textarea[name="message"]').removeClass('error');
+            $('input[name="email"]').removeClass('error');
        },
        error: function(xhr, status, error) {
-           $("<div>").attr('class', 'errorNotif').append('<p>' + xhr.responseJSON['code'] + ': ' + xhr.responseJSON['description'] + '</p>').append('<a onclick="$(this).parent().remove()" href="#">X</a>').insertAfter($("#errAfter"))
+           $("<div>").attr('class', 'errorNotif')
+            .append(
+                '<p>' + xhr.responseJSON['code'] + ': ' + xhr.responseJSON['description'] + '</p>')
+                    .append('<a onclick="$(this).parent().remove()" href="#">X</a>')
+           .insertAfter($("#errAfter"));
            switch (xhr.responseJSON['description']) { // the jank of ever
             case "Invalid captcha.":
-                $('input[name="name"]').css('border', ''); 
-                $('input[name="name"]').css('box-shadow', '');
-                $('input[name="name"]').css('outline', '');
-                $('textarea[name="message"]').css('border', '');
-                $('textarea[name="message"]').css('box-shadow', '');
-                $('textarea[name="message"]').css('outline', '');
-                $('input[name="email"]').css('border', '');
-                $('input[name="email"]').css('box-shadow', '');
-                $('input[name="email"]').css('outline', '');
+                $('input[name="name"]').removeClass('error');
+                $('textarea[name="message"]').removeClass('error');
+                $('input[name="email"]').removeClass('error');
                 $('.captcha-frame').attr('src', 'https://api.ashiecorner.xyz/captcha/ashiecorner'); // reset captcha
                 $('.captcha-frame').css('box-shadow', '0px 0px 12px #ff3939'); // make captcha have red shadow to show what went wrong
                 break;
             case "Name missing/too long.":
-                $('input[name="name"]').css('border', '2px #d51616 solid'); // BREAKING NEWS: local programmer is bad at programming
-                $('input[name="name"]').css('box-shadow', '0 0 8px #ff3737');
-                $('input[name="name"]').css('outline', '0');
-                $('textarea[name="message"]').css('border', '');
-                $('textarea[name="message"]').css('box-shadow', '');
-                $('textarea[name="message"]').css('outline', '');
-                $('input[name="email"]').css('border', '');
-                $('input[name="email"]').css('box-shadow', '');
-                $('input[name="email"]').css('outline', '');
+                $('input[name="name"]').addClass('error');
+                $('textarea[name="message"]').removeClass('error');
+                $('input[name="email"]').removeClass('error');
                 break;
             case "Message missing/too long.":
-                $('textarea[name="message"]').css('border', '2px #d51616 solid');
-                $('textarea[name="message"]').css('box-shadow', '0 0 8px #ff3737');
-                $('textarea[name="message"]').css('outline', '0');
-                $('input[name="name"]').css('border', '');
-                $('input[name="name"]').css('box-shadow', '');
-                $('input[name="name"]').css('outline', '');
-                $('input[name="email"]').css('border', '');
-                $('input[name="email"]').css('box-shadow', '');
-                $('input[name="email"]').css('outline', '');
+                $('textarea[name="message"]').addClass('error');
+                $('input[name="name"]').removeClass('error');
+                $('input[name="email"]').removeClass('error');
                 break;
             case "Invalid email.":
-                $('input[name="email"]').css('border', '2px #d51616 solid');
-                $('input[name="email"]').css('box-shadow', '0 0 8px #ff3737');
-                $('input[name="email"]').css('outline', '0');
-                $('input[name="name"]').css('border', '');
-                $('input[name="name"]').css('box-shadow', '');
-                $('input[name="name"]').css('outline', '');
-                $('textarea[name="message"]').css('border', '');
-                $('textarea[name="message"]').css('box-shadow', '');
-                $('textarea[name="message"]').css('outline', '');
+                $('input[name="email"]').addClass('error');
+                $('input[name="name"]').removeClass('error');
+                $('textarea[name="message"]').removeClass('error');
                 break;
             default:
                 break;

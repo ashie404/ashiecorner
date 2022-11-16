@@ -115,9 +115,10 @@ var r_text = [
     'i love spreading misinformation on the internet <3',
     'no two snowflakes are the same unless you have a snow duplicator',
     'gordan freeman　　　he does it <img src="img/goodjob.webp" alt="goodjob" width="16px">',
-    'I <3 pastel gore,,'
+    'I <3 pastel gore,,',
+    'I amorted too much'
 ];
-var r = Math.floor(26*Math.random());
+var r = Math.floor(27*Math.random());
 
 $(".scroll-text").html(r_text[r]);
 

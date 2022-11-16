@@ -240,6 +240,80 @@ td#icoX { text-align: center; filter: drop-shadow(0px 0px 3px #f55); }
     color: #ca9dbd;
 }
 
+/* mobile mininav */
+.mobilenav {
+	height: 32px;
+	margin-top: -3px;
+	font-family: Scr18;
+	font-size: 18px;
+	backdrop-filter: blur(4px);
+	line-height: 100%;
+	position: fixed;
+	top: 3px;
+	left: -256px;
+	visibility: hidden;
+	width: 100vw;
+	z-index: -4;
+	background: linear-gradient(to top, #ff8ba46e 0%,#a0286087 50%, #31133abd 100%);
+}
+.mobilenav > div { 
+	overflow-x: scroll;
+	overflow-y: visible;
+	white-space: nowrap;
+	line-height: 36px;
+	width: calc(100% - 45px);
+	display: inline-block;
+	position: relative;
+	left: 45px;
+}
+.mobilenav > div > a {
+ color: #ffd9ff;
+ position:relative;
+text-shadow: 0px 0px 6px #8662e3;
+  text-decoration: none;
+  padding-left: 8px;
+  display: inline-block;
+  top: 0px;
+}
+.mobilenav > div > a:before {
+	content:' ';
+	display:block;
+	position:absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 32px;
+	opacity: 0.4;
+	image-rendering: auto;
+	background-image: url('../img/mininavbutton.png');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	padding-right: 8px;
+	margin: 0;
+	z-index: -2;
+}
+.mobilenav > div > a.active:before {
+	opacity: 0.6 !important;
+	filter: brightness(1.5);
+}
+.start-button {
+	top:-7px;
+	left:2px;
+	width:40px;
+	height:44px;
+	background-image: url('../img/ashstart.png');
+	background-size: 54px 162px;
+	display: inline-block;
+	position: absolute;
+	background-position: -7px -2px;
+}
+.start-button:hover {
+	background-position: -7px 106px;
+}
+.start-button:active {
+	background-position: -7px 52px;
+}
+
 /* sidebar marquee */
 .text-scroller {
     margin-top: -6px;
@@ -874,7 +948,7 @@ iframe.captcha-frame {
 /* mobile compatibility stuff */
 .nav-button { /* normally invisible on desktop */
     position: fixed;
-    top: 16px;
+    top: 64px;
     left: -256px;
     background-color: #550066;
     padding-top: 12px;
@@ -899,7 +973,7 @@ iframe.captcha-frame {
 
 @media only screen and (max-width: 600px) {
     .sidebar { left: -256px; transition: left 0.5s; }
-    .page-content { width: calc(100vw - 32px); margin-left: 0px; padding-top: 82px; padding-right: 0px; transition: filter 0.5s; }
+    .page-content { width: calc(100vw - 32px); margin-left: 0px; padding-top: 120px; padding-right: 0px; transition: filter 0.5s; }
     .nav-button { left: 3px; transition: left 0.5s; visibility: visible; }
     .card { width: calc(100vw - 64px); }
     #hello { max-width: 75vw; }
@@ -909,6 +983,18 @@ iframe.captcha-frame {
 
     .featherlight-close-icon { width: 50px!important; line-height: 50px!important; font-size: 32px; }
     .featherlight-dl-icon { width: 50px!important; line-height: 50px!important; right: 50px!important; font-size: 32px; }
+
+    .text-scroller {
+		position: fixed;
+		top: 38px;
+		left: 0px;
+		width: 100vw;
+		z-index: -4;
+	}
+	.mobilenav {
+		left: 0px;
+		visibility: visible;
+	}
 }
 
 /* to better fit large screens, double scale literally everything lmao */

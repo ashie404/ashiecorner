@@ -1,3 +1,7 @@
+# <update/> meowmeow updatess | 11-15-22
+- added new windows-7 style virtual taskbar for mobile navigation
+- marquee text is now more visible on mobile
+
 # <update/> site updates! | 11-12-22
 - better guestbook form experience, updated to sushicaptcha v1.1
 - added a lot more random marquee texts

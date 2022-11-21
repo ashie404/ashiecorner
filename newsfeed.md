@@ -1,3 +1,6 @@
+# <update/> volve softwork | 11-21-22
+- added cohost and tumblr links to links page
+
 # <update/> gay gay homosexual gay | 11-16-22
 - improved virtual taskbar appearance
 - optimized guestbook frontend code

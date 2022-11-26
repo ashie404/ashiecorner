@@ -7,7 +7,7 @@ function feedGET() {
 
 // guestbook stuff (please also criticize my terrible programming)
 async function guestbookGET() {
-    const response = await fetch('https://api.ashiecorner.xyz/pygb/api/getEntries/ashiecorner', {mode: 'cors'});
+    const response = await fetch('https://api.ashiecorner.xyz/guestbook/getEntries/ashiecorner', {mode: 'cors'});
     if (response.ok) {
         let json = await response.json();
         if (json) {
@@ -125,7 +125,7 @@ $(".scroll-text").html(r_text[r]);
 $(".post-button").click(function() {
     $.ajax({
        type: "POST",
-       url: "https://api.ashiecorner.xyz/pygb/api/postEntry/ashiecorner",
+       url: "https://api.ashiecorner.xyz/guestbook/postEntry/ashiecorner",
        data: $(".guestbook").serialize(),
        success: function(data) {
             guestbookGET();

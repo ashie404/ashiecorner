@@ -1,8 +1,7 @@
 // this poorly written javascript brought to you by a gay cat
 
-// hitcounter stuff
-async function hitcounterGET() {
-    const response = await fetch('https://api.ashiecorner.xyz/hitcounter/getHits/ashiecorner', {mode: 'cors'});
+async function hcGET() {
+    const response = await fetch('https://api.ashiecorner.xyz/hc/gh/ashiecorner', {mode: 'cors'});
     if (response.ok) {
         let json = await response.json();
         if (json) {
@@ -232,7 +231,7 @@ function navSwipeLeft() {
 Hammer(document).on("swipeleft", navSwipeLeft);
 Hammer(document).on("swiperight", navSwipeRight);
 
-hitcounterGET();
+hcGET();
 
 
 });

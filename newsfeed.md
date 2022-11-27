@@ -1,3 +1,7 @@
+### <update/> hit counting | 11/26/22
+
+- added a new hitcounter on the sidebar!
+
 # <update/> volve softwork | 11-21-22
 - added cohost and tumblr links to links page
 

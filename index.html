@@ -40,7 +40,8 @@
             </ol>
             <div class="sidebar-footer">
                 <a href="https://zencorner.xyz" class="center-badge"><img src="img/zencorner.png" alt="ZenCorner"></a>
-                <p align="center">Made with <img src="img/heart.png" alt="love"><br> <span class="ashiekitty">Ashie</span> and <span class="zenkitty">Zenith</span>!</p>
+                <p align="center" style="margin-top: -8px;">Made with <img src="img/heart.png" alt="love"><br> <span class="ashiekitty">Ashie</span> and <span class="zenkitty">Zenith</span>!</p>
+                <p align="center"><img style="vertical-align: middle;" src="img/counter.gif" alt="counter" title="Hitcounter"><span id="hits">131 hits</span></p>
                 <p align="center"><a href="https://p.yusukekamiyamane.com/">Uses Fugue Icons</a></p>
             </div>
             <button class="nav-button" onclick="navButton()"><img src="img/menu.svg"></button>
@@ -64,6 +65,11 @@
         <script type="text/javascript" src="js/hammer.min.js"></script>
         <script type="text/javascript" src="js/snarkdown.js"></script>
         <script type="text/javascript" src="js/site.min.js"></script>    
-        <script type="text/javascript">feedGET()</script> 
+        <script type="text/javascript">feedGET()
+        $.ajax({
+            type: "POST",
+            url: "https://api.ashiecorner.xyz/hitcounter/hit/ashiecorner"
+        });
+        </script> 
     </body>
 </html>

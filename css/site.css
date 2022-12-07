@@ -492,6 +492,16 @@ news:before {
 #ds { box-shadow: 0px 0px 6px #c099ff; }
 #tu { box-shadow: 0px 0px 6px #DB92AC; }
 #ch { box-shadow: 0px 0px 6px #FFCD9E; }
+#mt { box-shadow: 0px 0px 6px #6364FF; }
+
+#glow-ase {filter:drop-shadow(0px 0px 4px #FFF)}
+#glow-csp {filter:drop-shadow(0px 0px 4px #7babd6)}
+#glow-sai {filter:drop-shadow(0px 0px 4px #ABC144)}
+#glow-pdn {filter:drop-shadow(0px 0px 4px #739ade)}
+#glow-fur {filter:drop-shadow(0px 0px 4px #467193)}
+#glow-fl {filter:drop-shadow(0px 0px 4px #F78C23)}
+#glow-ink {filter:drop-shadow(0px 0px 4px #455e82)}
+#glow-vsc {filter:drop-shadow(0px 0px 4px #25aff3)}
 
 /* projects page cards */
 /* why did i have to put so much effort into these */

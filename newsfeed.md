@@ -1,3 +1,7 @@
+# <update/> new stuff woo! | 12-7-22
+- added mastodon link to links page
+- made icons in "Software I use" section glow
+
 # <update/> hit counting | 11-26-22
 - added a new hitcounter on the sidebar!
 

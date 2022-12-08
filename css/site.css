@@ -251,7 +251,6 @@ td#icoX { text-align: center; filter: drop-shadow(0px 0px 3px #f55); }
 	margin-top: -3px;
 	font-family: Scr18;
 	font-size: 18px;
-	backdrop-filter: blur(4px);
 	line-height: 100%;
 	position: fixed;
 	top: 3px;
@@ -412,6 +411,9 @@ text-shadow: 0px 0px 6px #8662e3;
 }
 
 .subnote { font-size: 22px!important; color: #c397d4; } /* love you so much css <3 */
+.subnote > img {
+    vertical-align: middle;
+}
 
 /* newsfeed stuff */
 .feed {
@@ -1020,6 +1022,7 @@ iframe.captcha-frame {
 	.mobilenav {
 		left: 0px;
 		visibility: visible;
+        backdrop-filter: blur(4px);
 	}
 }
 

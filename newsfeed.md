@@ -1,3 +1,6 @@
+# <update/> sparklyy | 3-5-23
+- meoww i havent updated my site in 3 months but uhm pretty sparkle background :3 nya
+
 ## <news/> melon shaders v2.5 released! | 12-21-22
 - this update is massive, includes lots of new things and fixes :3
 - full changelog and download [here](https://github.com/ashie404/MelonShaders/releases/tag/v2.5.1)

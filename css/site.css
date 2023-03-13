@@ -438,6 +438,9 @@ text-shadow: 0px 0px 6px #8662e3;
     font-size: 32px;
     text-shadow: 0 0 6px #9fc;
 }
+.feed > p > a {
+    color: #9fc;
+}
 .post {
     font-weight: 400;
     font-family: 'Comicoro';

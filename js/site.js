@@ -18,21 +18,21 @@ function feedGET() {
         $(rss).find("item").each(function() {
             var element = $(this);
             if (postType = element.find("category")) {
-                switch (postType) {
+                switch (postType.text()) {
                     case 'Site Update':
                         // site update post stuff awawa
-                        tmp += '<h1><img src="img/update.png"> ' + element.find('title') + ' <span class="subnote"> | ' + element.find('pubDate') + '</span></h1>';
+                        tmp += '<h1><img src="img/update.png"> ' + element.find('title').text() + ' <span class="subnote"> | ' + element.find('pubDate') + '</span></h1>';
                         break;
                     case 'Blog':
                         // blog post stuff
-                        tmp += '<h2><img src="img/news.png"> ' + element.find('title') + ' <span class="subnote"> | ' + element.find('pubDate') + '</span></h2>';
+                        tmp += '<h2><img src="img/news.png"> ' + element.find('title').text() + ' <span class="subnote"> | ' + element.find('pubDate') + '</span></h2>';
                         break;
                     default:
                         console.log('invalid category');
                         break;
                 }
                 if (desc = element.find("description")) {
-                    tmp += '<p>' + desc + '</p>';
+                    tmp += '<p>' + desc.text() + '</p>';
                 }
                 tmp += '<br>';
             } else {

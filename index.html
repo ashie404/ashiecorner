@@ -58,13 +58,13 @@
             <p class="subnote">designed to be viewed at 1024x768 :3<br><img src="img/cookie-bite.png" alt="Bitten cookie" title="I eated them all :3"> no cookies are used or stored on this site!</p>
             <br>
             <h1>recent news!</h1>
-            <div class="feed">Enable JavaScript or update your browser to see newsfeed~</div>
+            <div class="feed"><p>Enable JavaScript or update your browser to see newsfeed~</p></div>
         </div>
 
         <script type="text/javascript" src="js/jquery.min.js"></script>
         <script type="text/javascript" src="js/hammer.min.js"></script>
         <script type="text/javascript" src="js/site.min.js"></script>    
-        <script type="text/javascript">feedRecentGET()
+        <script type="text/javascript">feedGET(true);
         $.ajax({
             method: "POST",
             url: "https://api.ashiecorner.xyz/hc/h/ashiecorner"

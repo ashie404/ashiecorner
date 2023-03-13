@@ -12,10 +12,11 @@ async function hcGET() {
 
 // newsfeed stuff (omg its a proper rss feed now -Ash)
 // putting this here as a reminder to make this fancier later
-function feedGET() {
+function feedGET(recent) {
     $.get('newsfeed.xml', function(rss) {
         var tmp = '';
-        $(rss).find("item").each(function() {
+        $(rss).find("item").each(function(i) {
+            if (recent == true && i == 5) { return false; }
             var element = $(this);
             if (postType = element.find("category")) {
                 switch (postType.text()) {

@@ -33,7 +33,10 @@ function feedGET(recent) {
                     console.log('invalid category');
                     break;
             }
-            tmp += '<p>' + element.find("description").html() + '</p><br>';
+            if (desc = element.find("description")) {
+                tmp += '<p>' + desc.html() + '</p>';
+            }
+            tmp += '<br>';
         });
         $('.feed').html(tmp);
     });

@@ -445,6 +445,10 @@ text-shadow: 0px 0px 6px #8662e3;
     width: 65%;
     margin-top: 8px;
 }
+.post > .subnote {
+    position: relative;
+    top: -2px;
+}
 
 .update { 
     text-shadow: 0px 0px 6px #a974ff; 
@@ -456,6 +460,9 @@ text-shadow: 0px 0px 6px #8662e3;
     text-shadow: 0px 0px 6px #ffa366; 
     color: #ffcca9; 
     background: linear-gradient(to right, #661d00FF 0%,#663100FF 50%,#661d0000 100%);
+}
+.blog > .subnote {
+    color: #d69f79;
 }
 
 

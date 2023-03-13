@@ -49,7 +49,7 @@
         </nav>
         <div class="page-content">
             <img id="hello" src="img/hello.svg" alt="hello!">
-            <h1>Welcome to my site!</h1>
+            <h1>welcome to my site!</h1>
             <p>Hi, I'm Ash! Welcome to my cozy little site! I like to make art, music, and also program things.<br>
             I'll put pretty much everything that I've made on this site, so feel free to take a look around~<br> Don't forget to <a href="guestbook.html">sign my guestbook!</a></p>
             <p>Here's my web button so you can add my site to your own page! <br>
@@ -57,15 +57,14 @@
             <p class="construction"><img src="img/construction.gif"> This site is under construction! <img src="img/construction.gif"></p>
             <p class="subnote">designed to be viewed at 1024x768 :3<br><img src="img/cookie-bite.png" alt="Bitten cookie" title="I eated them all :3"> no cookies are used or stored on this site!</p>
             <br>
-            <h1>[ News + Updates ] <button class="refresh-feed" onclick="feedGET()">Refresh Feed</button></h1>
-            <a href="newsfeed.xml" id="rawfeed"><img src="img/rawfeed.png"> view raw newsfeed</a>
+            <h1>recent news!</h1>
             <div class="feed">Enable JavaScript or update your browser to see newsfeed~</div>
         </div>
 
         <script type="text/javascript" src="js/jquery.min.js"></script>
         <script type="text/javascript" src="js/hammer.min.js"></script>
         <script type="text/javascript" src="js/site.min.js"></script>    
-        <script type="text/javascript">feedGET()
+        <script type="text/javascript">feedRecentGET()
         $.ajax({
             method: "POST",
             url: "https://api.ashiecorner.xyz/hc/h/ashiecorner"

@@ -34,6 +34,9 @@ function feedGET() {
                 if (desc = element.find("description")) {
                     tmp += '<p>' + desc.text() + '</p>';
                 }
+                if (link = element.find("link")) {
+                    tmp += '<a href="' + link.text() + '">link</a>'
+                }
                 tmp += '<br>';
             } else {
                 console.log('category does not exist in newsfeed entry');

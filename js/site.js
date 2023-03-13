@@ -16,32 +16,24 @@ function feedGET(recent) {
     $.get('newsfeed.xml', function(rss) {
         var tmp = '';
         $(rss).find("item").each(function(i) {
+            // exit loop on 5th entry if in recent feed mode
             if (recent == true && i == 5) { return false; }
             var element = $(this);
-            if (postType = element.find("category")) {
-                switch (postType.text()) {
-                    case 'Site Update':
-                        // site update post stuff awawa
-                        tmp += '<h1 class="post update"><img src="img/update.png"> ' + element.find('title').text() + ' <span class="subnote"> | ' + element.find('pubDate').text() + '</span></h1>';
-                        break;
-                    case 'Blog':
-                        // blog post stuff
-                        tmp += '<h1 class="post blog"><img src="img/news.png"> ' + element.find('title').text() + ' <span class="subnote"> | ' + element.find('pubDate').text() + '</span></h2>';
-                        break;
-                    default:
-                        console.log('invalid category');
-                        break;
-                }
-                if (desc = element.find("description")) {
-                    tmp += '<p>' + desc.text() + '</p>';
-                }
-                if (link = element.find("link")) {
-                    tmp += '<a href="' + link.text() + '">link</a>'
-                }
-                tmp += '<br>';
-            } else {
-                console.log('category does not exist in newsfeed entry');
+
+            switch (element.find("category").text()) {
+                case 'Site Update':
+                    // site update post stuff awawa
+                    tmp += '<h1 class="post update"><img src="img/update.png"> ' + element.find('title').text() + ' <span class="subnote"> | ' + element.find('pubDate').text() + '</span></h1>';
+                    break;
+                case 'Blog':
+                    // blog post stuff
+                    tmp += '<h1 class="post blog"><img src="img/news.png"> ' + element.find('title').text() + ' <span class="subnote"> | ' + element.find('pubDate').text() + '</span></h2>';
+                    break;
+                default:
+                    console.log('invalid category');
+                    break;
             }
+            tmp += '<p>' + element.find("description").text() + '</p><br>';
         });
         $('.feed').html(tmp);
     });

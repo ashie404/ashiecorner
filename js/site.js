@@ -39,6 +39,7 @@ function feedGET() {
                 console.log('category does not exist in newsfeed entry');
             }
         });
+        $('.feed').html(tmp);
     });
 }
 

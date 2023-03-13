@@ -15,7 +15,8 @@ async function hcGET() {
 function feedGET() {
     $.get('newsfeed.xml', function(rss) {
         var tmp = '';
-        $(rss).find("item").each(function(element) {
+        $(rss).find("item").each(function() {
+            var element = $(this);
             if (postType = element.find("category")) {
                 switch (postType) {
                     case 'Site Update':

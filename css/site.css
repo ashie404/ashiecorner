@@ -430,9 +430,15 @@ text-shadow: 0px 0px 6px #8662e3;
 /* newsfeed stuff */
 .feed {
     margin-top: 8px;
-    font-size: 32px;
 }
-.feed > h1, .feed > h2 {
+.feed > p {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 48px;
+    font-size: 32px;
+    text-shadow: 0 0 6px #9fc;
+}
+.post {
     font-weight: 400;
     font-family: 'Comicoro';
     font-size: 32px;
@@ -440,23 +446,18 @@ text-shadow: 0px 0px 6px #8662e3;
     margin-top: 8px;
 }
 
-.feed > h1 { 
+.update { 
     text-shadow: 0px 0px 6px #a974ff; 
     color: #e0c2ff; 
     background: linear-gradient(to right, #581672FF 0%,#3e1c75FF 50%,#3e1c7500 100%);
 }
-update:before {
-    content: url(../img/update.png);
-}
 
-.feed > h2 { 
+.blog { 
     text-shadow: 0px 0px 6px #ffa366; 
     color: #ffcca9; 
     background: linear-gradient(to right, #661d00FF 0%,#663100FF 50%,#661d0000 100%);
 }
-news:before {
-    content: url(../img/news.png);
-}
+
 
 .refresh-feed {
     font-family: 'Comicoro';

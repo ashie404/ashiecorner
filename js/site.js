@@ -21,11 +21,11 @@ function feedGET() {
                 switch (postType.text()) {
                     case 'Site Update':
                         // site update post stuff awawa
-                        tmp += '<h1><img src="img/update.png"> ' + element.find('title').text() + ' <span class="subnote"> | ' + element.find('pubDate') + '</span></h1>';
+                        tmp += '<h1 class="post update"><img src="img/update.png"> ' + element.find('title').text() + ' <span class="subnote"> | ' + element.find('pubDate').text() + '</span></h1>';
                         break;
                     case 'Blog':
                         // blog post stuff
-                        tmp += '<h2><img src="img/news.png"> ' + element.find('title').text() + ' <span class="subnote"> | ' + element.find('pubDate') + '</span></h2>';
+                        tmp += '<h1 class="post blog"><img src="img/news.png"> ' + element.find('title').text() + ' <span class="subnote"> | ' + element.find('pubDate').text() + '</span></h2>';
                         break;
                     default:
                         console.log('invalid category');

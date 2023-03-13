@@ -10,9 +10,35 @@ async function hcGET() {
     }
 }
 
-// newsfeed stuff (please hate me as much as possible for this code -Ash)
+// newsfeed stuff (omg its a proper rss feed now -Ash)
+// putting this here as a reminder to make this fancier later
 function feedGET() {
-    fetch('newsfeed.md').then(response => response.text()).then(result => $('.feed').html(snarkdown(result)));
+    $.get('newsfeed.xml', function(rss) {
+        var tmp = '';
+        $(rss).find("item").each(function(element) {
+            if (postType = element.find("category")) {
+                switch (postType) {
+                    case 'Site Update':
+                        // site update post stuff awawa
+                        tmp += '<h1><img src="img/update.png"> ' + element.find('title') + ' <span class="subnote"> | ' + element.find('pubDate') + '</span></h1>';
+                        break;
+                    case 'Blog':
+                        // blog post stuff
+                        tmp += '<h2><img src="img/news.png"> ' + element.find('title') + ' <span class="subnote"> | ' + element.find('pubDate') + '</span></h2>';
+                        break;
+                    default:
+                        console.log('invalid category');
+                        break;
+                }
+                if (desc = element.find("description")) {
+                    tmp += '<p>' + desc + '</p>';
+                }
+                tmp += '<br>';
+            } else {
+                console.log('category does not exist in newsfeed entry');
+            }
+        });
+    });
 }
 
 // guestbook stuff (please also criticize my terrible programming)

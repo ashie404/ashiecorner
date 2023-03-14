@@ -33,8 +33,8 @@ function feedGET(recent) {
                     console.log('invalid category');
                     break;
             }
-            if (desc = element.find("description")) {
-                tmp += '<p>' + desc.html() + '</p>';
+            if (desc = element.find("description").html() != 'undefined') {
+                tmp += '<p>' + desc + '</p>';
             }
             tmp += '<br>';
         });

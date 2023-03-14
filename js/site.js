@@ -33,8 +33,9 @@ function feedGET(recent) {
                     console.log('invalid category');
                     break;
             }
-            if (desc = element.find("description") && typeof desc.html() != 'undefined') {
-                tmp += '<p>' + desc.html() + '</p>';
+            var desc = element.find("description").html();
+            if (typeof desc != 'undefined') {
+                tmp += '<p>' + desc + '</p>';
             }
             tmp += '<br>';
         });

@@ -39,7 +39,10 @@
 
     <title>new stuff woo!</title>
     
-    <description>added mastodon link to links page, made icons in "Software I use" section glow</description>
+    <description><ul>
+      <li>added mastodon link to links page</li>
+      <li>made icons in "Software I use" section glow</li>
+    </ul></description>
   </item>
 
   <item>
@@ -66,7 +69,10 @@
 
     <title>gay gay homosexual gay</title>
     
-    <description>improved virtual taskbar appearance, optimized guestbook frontend code</description>
+    <description><ul>
+      <li>improved virtual taskbar appearance</li>
+      <li>optimized guestbook frontend code</li>
+    </ul></description>
   </item>
 
   <item>
@@ -75,7 +81,10 @@
 
     <title>meowmeow updatess</title>
     
-    <description>added new windows-7 style virtual taskbar for mobile navigation, marquee text is now more visible on mobile</description>
+    <description><ul>
+      <li>added new windows-7 style virtual taskbar for mobile navigation</li>
+      <li>marquee text is now more visible on mobile</li>
+    </ul></description>
   </item>
 
   <item>
@@ -84,7 +93,10 @@
 
     <title>site updates!</title>
     
-    <description>better guestbook form experience, updated to sushicaptcha v1.1. added a lot more random marquee texts</description>
+    <description><ul>
+      <li>better guestbook form experience, updated to sushicaptcha v1.1</li>
+      <li>added a lot more random marquee texts</li>
+    </ul></description>
   </item>
 
   <item>
@@ -129,8 +141,13 @@
 
     <title>site updates!</title>
     
-    <description>added embeds to all pages, adjusted some page titles, improved guestbook card styling, 
-        added software i use section to about me, added guestbook</description>
+    <description><ul>
+      <li>added embeds to all pages</li>
+      <li>adjusted some page titles</li>
+      <li>improved guestbook card styling</li>
+      <li>added software i use section to about me</li>
+      <li>added guestbook</li>
+    </ul></description>
   </item>
 
   <item>
@@ -148,7 +165,10 @@
 
     <title>site updates!</title>
     
-    <description>fixed text marquee in sidebar, added other sites section to links page</description>
+    <description><ul>
+      <li>fixed text marquee in sidebar</li>
+      <li>added other sites section to links page</li>
+    </ul></description>
   </item>
 
   <item>
@@ -157,7 +177,10 @@
 
     <title>site updates!</title>
     
-    <description>less buggy large/small screen scaling, added raw newsfeed link</description>
+    <description><ul>
+      <li>less buggy large/small screen scaling</li>
+      <li>added raw newsfeed link</li>
+    </ul></description>
   </item>
 
   <item>
@@ -166,7 +189,13 @@
 
     <title>site updates!</title>
     
-    <description>added wednesday index image, site news feed, 404 page, credits portion to links page, and various other visual + performance improvements.</description>
+    <description><ul>
+      <li>added wednesday index image</li>
+      <li>added site news feed</li>
+      <li>added 404 page</li>
+      <li>added credits portion to links page</li>
+      <li>visual + performance improvements</li>
+    </ul></description>
   </item>
 
   <item>
@@ -184,7 +213,10 @@
 
     <title>site updates!</title>
     
-    <description>art gallery page added, support for high-resolution screens</description>
+    <description><ul>
+      <li>art gallery page added</li>
+      <li>support for high-resolution screens</li>
+    </ul></description>
   </item>
 
   <item>
@@ -193,7 +225,10 @@
 
     <title>site updates!</title>
     
-    <description>randomized text marquee added to sidebar, support for small screens</description>
+    <description><ul>
+      <li>randomized text marquee added to sidebar</li>
+      <li>support for small screens</li>
+    </ul></description>
   </item>
   
   <item> 

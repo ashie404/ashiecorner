@@ -959,7 +959,7 @@ flexbr {
 iframe.captcha-frame {
     border: none;
     margin-right: 4px;
-    border-radius: 10px;
+    border-radius: 5px;
     box-shadow: 0px 0px 12px #b942b9;
     margin-top: 8px;
     transition: box-shadow 0.5s;

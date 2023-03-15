@@ -269,7 +269,7 @@ td#icoX { text-align: center; filter: drop-shadow(0px 0px 3px #f55); }
 	left: -256px;
 	visibility: hidden;
 	width: 100vw;
-	z-index: -4;
+	z-index: 2;
 	background: linear-gradient(to top, #ff8ba46e 0%,#a0286087 50%, #31133abd 100%);
 }
 .mobilenav > div { 
@@ -324,7 +324,7 @@ text-shadow: 0px 0px 6px #8662e3;
 	background-position: -7px -2px;
 }
 .start-button:hover {
-	background-position: -7px 106px;
+	background-position: -7px 106px!important;
 }
 .start-button:active {
 	background-position: -7px 52px;
@@ -1034,7 +1034,14 @@ iframe.captcha-frame {
 
 @media only screen and (max-width: 640px) {
     .sidebar { left: -256px; transition: left 0.5s; }
-    .page-content { width: calc(100vw - 32px); margin-left: 0px; padding-top: 120px; padding-right: 0px; transition: filter 0.5s; }
+    .sidebar > a {
+        padding-top: 64px;
+    }
+    .sidebar > p {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .page-content { width: calc(100vw - 32px); margin-left: 0px; padding-top: 96px; padding-right: 0px; transition: filter 0.5s; }
     .nav-button { left: 3px; transition: left 0.5s; visibility: visible; }
     .card { width: calc(100vw - 64px); }
     #hello { max-width: 75vw; }
@@ -1050,7 +1057,7 @@ iframe.captcha-frame {
 		top: 38px;
 		left: 0px;
 		width: 100vw;
-		z-index: -4;
+		z-index: 1;
 	}
 	.mobilenav {
 		left: 0px;

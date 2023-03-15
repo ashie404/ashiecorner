@@ -112,13 +112,9 @@ function navButton() {
     if (navOpen) {
         // close nav
         $(".sidebar").css('left', '');
-        $(".nav-button").css('left', '');
-        $(".nav-button img").attr('src', 'img/menu.svg');
         $(".page-content").attr('id', '');
     } else {
         $(".sidebar").css('left', '0px');
-        $(".nav-button").css('left', '259px');
-        $(".nav-button img").attr('src', 'img/close.svg');
         $(".page-content").attr('id', 'navOpen');
     }
     navOpen = !navOpen;
@@ -260,6 +256,5 @@ Hammer(document).on("swipeleft", navSwipeLeft);
 Hammer(document).on("swiperight", navSwipeRight);
 
 hcGET();
-
 
 });

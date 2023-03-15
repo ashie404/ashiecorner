@@ -452,6 +452,11 @@ text-shadow: 0px 0px 6px #8662e3;
     position: relative;
     top: -2px;
 }
+.post > img {
+    filter: drop-shadow(0 0 4px #dcc7ff);
+    position: relative;
+    top: 2px;
+}
 
 .update { 
     text-shadow: 0px 0px 6px #a974ff; 
@@ -466,6 +471,9 @@ text-shadow: 0px 0px 6px #8662e3;
 }
 .blog > .subnote {
     color: #d69f79;
+}
+.blog > img {
+    filter: drop-shadow(0 0 4px #ffcca9);
 }
 
 

@@ -1035,7 +1035,7 @@ iframe.captcha-frame {
 }
 
 @media only screen and (max-width: 640px) {
-    .sidebar { left: -256px; transition: left 0.5s; }
+    .sidebar { left: -260px; transition: left 0.5s; }
     .sidebar > a {
         padding-top: 64px;
     }

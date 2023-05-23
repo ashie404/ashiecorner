@@ -16,6 +16,23 @@
 
   <item>
     <category>Site Update</category>
+    <pubDate>Sun, 26 Mar 2023 17:51:00 CDT</pubDate>
+
+    <title>more tech!</title>
+    <description>I recently have obtained some new devices, so the my tech section of the about page has been updated accordingly, and also overall cleaned up!</description>
+  </item>
+
+  <item>
+    <category>Blog</category>
+    <pubDate>Tue, 21 Mar 2023 21:45:00 CDT</pubDate>
+
+    <title>melon shaders v2.6+pre1 released!</title>
+    <link>https://github.com/ashie404/MelonShaders/releases/tag/v2.6+pre1</link>
+    <description>full changelog and download <a href="https://github.com/ashie404/MelonShaders/releases/tag/v2.6+pre1">here!</a></description>
+  </item>
+
+  <item>
+    <category>Site Update</category>
     <pubDate>Tue, 14 Mar 2023 22:27:00 CDT</pubDate>
 
     <title>mobile stuff hehe :3</title>

@@ -677,7 +677,6 @@ text-shadow: 0px 0px 6px #8662e3;
 /* art gallery page stuff */
 .gallery {
     margin: 10px;
-    max-width: 768px;
     margin-left: -10px;
 }
 .gallery .box {
@@ -704,11 +703,16 @@ text-shadow: 0px 0px 6px #8662e3;
         width: 33.3%;
     }
 }
-@media only screen and (min-width : 9999px) {
-   .box {
+@media only screen and (min-width : 1000px) {
+   .gallery .box {
       width: 25%;
    }
 }
+@media only screen and (min-width : 1600px) {
+    .gallery .box {
+       width: 17.5%;
+    }
+ }
 
 .box > figure > img {
     image-rendering: auto;

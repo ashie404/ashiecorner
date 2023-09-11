@@ -231,6 +231,9 @@ switch (day) {
     case 1: // monday
         $(".index-img").attr("src", "/img/index1.png");
         break;
+    case 2: // tuesday
+        $(".index-img").attr("src", "/img/index2.png");
+        break;
     case 3: // wednesday
         $(".index-img").attr("src", "/img/index3.png");
         break;

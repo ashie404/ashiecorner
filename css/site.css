@@ -1066,6 +1066,7 @@ iframe.captcha-frame {
         padding-top: 64px;
     }
     .index-overlay { top: 64px }
+    .topdecor { top: 64px }
     .sidebar > p {
         margin-top: 0;
         margin-bottom: 0;

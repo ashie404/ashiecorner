@@ -1006,6 +1006,28 @@ iframe.captcha-frame {
     text-shadow: 0 0 12px #ffac68;
 }
 
+.index-overlay {
+    position:absolute;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    width: 256px;
+    height: 256px;
+    background-image: url('../img/1yearanni.png');
+}
+
+.topdecor {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    background-image: url('../img/topdecor.png');
+    background-size: 256px 64px;
+    background-repeat: repeat-x;
+    height: 64px;
+    width: 100%;
+  }
+
+
 /* mobile compatibility stuff */
 .nav-button { /* normally invisible on desktop */
     position: fixed;
@@ -1043,6 +1065,7 @@ iframe.captcha-frame {
     .sidebar > a {
         padding-top: 64px;
     }
+    .index-overlay { top: 64px }
     .sidebar > p {
         margin-top: 0;
         margin-bottom: 0;

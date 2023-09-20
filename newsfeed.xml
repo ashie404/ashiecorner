@@ -7,6 +7,14 @@
   <description>Ash's little corner of the internet, home to their silly drawings and projects!</description>
 
   <item>
+    <category>Blog</category>
+    <pubDate>Wed, 20 Sep 2023 07:28:00 CDT</pubDate>
+
+    <title>JavaDungeons is being ported to 1.20!</title>
+    <description>after 2 years of not doing anything with javadungeons, i've decided to start porting it to 1.20 and hopefully, adding more of the mcd content into it!</description>
+  </item>
+
+  <item>
     <category>Site Update</category>
     <pubDate>Tue, 12 Sep 2023 08:25:00 CDT</pubDate>
 

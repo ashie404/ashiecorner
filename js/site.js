@@ -50,7 +50,10 @@ async function guestbookGET() {
         let json = await response.json();
         if (json) {
             var tmp = '';
+            var i = 0;
             $.each( json, function( key, value ) {
+                // please help my cat is yelling at me while im trying to work on this / he keeps climbing on my keyboard sob
+                if (i )
                 const epoch = Number(value[3])
                 tmp += '<div class="gbe">';
                 tmp += '    <div class="gbe-header">';
@@ -72,6 +75,7 @@ async function guestbookGET() {
                 tmp += '    </div>';
                 tmp += '    <p>' + value[2] + '</p>';
                 tmp += '</div>';
+                i++; 
             });
         
             $('.gb-entries').html(tmp);

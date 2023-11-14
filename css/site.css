@@ -338,7 +338,7 @@ text-shadow: 0px 0px 6px #8662e3;
 /* sidebar marquee */
 .text-scroller {
     margin-top: -6px;
-    background: linear-gradient(to bottom, rgba(237,251,244,0.45) 0,rgba(210,246,221,0.45) 4%,rgba(195,243,213,0.45) 11%,rgba(186,242,205,0.45) 18%,rgba(176,240,201,0.45) 21%,rgba(173,239,198,0.45) 25%,rgba(160,236,190,0.45) 29%,rgba(156,236,188,0.45) 32%,rgba(146,234,178,0.45) 36%,rgba(138,232,176,0.45) 43%,rgba(116,230,160,0.45) 54%,rgba(113,229,155,0.45) 61%,rgba(105,229,148,0.45) 64%,rgba(104,228,154,0.45) 79%,rgba(100,228,151,0.45) 82%,rgba(101,229,150,0.45) 89%,rgba(109,229,153,0.45) 93%,rgba(143,233,176,0.45) 96%,rgba(60,224,120,0.45) 100%);
+    background: linear-gradient(to bottom, rgba(225,245,238,0.45) 0,rgba(185,231,206,0.45) 4%,rgba(159,223,193,0.45) 11%,rgba(146,218,182,0.45) 18%,rgba(129,213,175,0.45) 21%,rgba(125,211,172,0.45) 25%,rgba(104,204,161,0.45) 29%,rgba(98,202,157,0.45) 32%,rgba(81,197,143,0.45) 36%,rgba(65,193,137,0.45) 43%,rgba(52,166,115,0.45) 54%,rgba(49,161,109,0.45) 61%,rgba(45,151,100,0.45) 64%,rgba(44,148,103,0.45) 79%,rgba(42,142,99,0.45) 82%,rgba(43,145,99,0.45) 89%,rgba(47,155,105,0.45) 93%,rgba(76,196,140,0.45) 96%,rgba(23,85,56,0.45) 100%);
     backdrop-filter: blur(4px); /* It's actually surprisingly easy to mod your 3DS */
     height: 32px;
     width: 100%;
@@ -1071,7 +1071,7 @@ iframe.captcha-frame {
     .index-overlay { top: 64px }
     .topdecor { top: 64px }
     .sidebar > p {
-        margin-top: 0;
+        margin-top: -6px;
         margin-bottom: 0;
     }
     .page-content { width: calc(100vw - 32px); margin-left: 0px; padding-top: 96px; padding-right: 0px; transition: filter 0.5s; }

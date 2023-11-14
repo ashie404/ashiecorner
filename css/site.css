@@ -233,9 +233,9 @@ td#icoX { text-align: center; filter: drop-shadow(0px 0px 3px #f55); }
     width: 100%;
 }
 .sidebar > ol > li:hover {
-    background: #550066;
-    background: linear-gradient(to bottom, #55006600 0%,#660061FF 50%,#55006600 100%);
-    color: #FF99CC;
+    background: #116655;
+    background: linear-gradient(to bottom, #11665500 0%,#116655FF 50%,#11665500 100%);
+    color: #99FFCC;
 }
 .sidebar > ol > li > a {
     text-decoration: none;

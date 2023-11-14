@@ -352,7 +352,7 @@ text-shadow: 0px 0px 6px #8662e3;
 /* sidebar footer */
 .sidebar-footer {
     margin-top: auto;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
     font-size: 32px;
     width: 256px;
     background: linear-gradient(to top, #b42071, #ff5c9200);

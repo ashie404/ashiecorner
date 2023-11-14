@@ -204,17 +204,20 @@ td#icoX { text-align: center; filter: drop-shadow(0px 0px 3px #f55); }
     top: 0px;
     float: left;
     background-image: url(../img/scrollbg.gif);
+    background-size: 128px;
     border-right: 4px #550066 groove;
     color: white;
 }
 .sidebar > p {
-    margin: 5px; 
-    margin-top: 10px;
-    margin-bottom: 20px;
-    font-size: 32px; 
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    font-size: 32px;
     line-height: 65%;
-    color: #99FFCC;
-    text-shadow: 0px 0px 6px #99FFCC;
+    color: #9fc;
+    text-shadow: 0 0 6px #9fc;
+    background-color: #285;
+    background: linear-gradient(to bottom, #174, #1740);
 }
 
 /* nav button stuff */
@@ -335,7 +338,7 @@ text-shadow: 0px 0px 6px #8662e3;
 /* sidebar marquee */
 .text-scroller {
     margin-top: -6px;
-    background: linear-gradient(to bottom, rgba(234,231,233,0.45) 0%,rgba(206,199,205,0.45) 4%,rgba(200,191,198,0.45) 7%,rgba(189,180,187,0.45) 11%,rgba(180,169,178,0.45) 18%,rgba(169,156,166,0.45) 21%,rgba(165,152,162,0.45) 25%,rgba(152,136,148,0.45) 29%,rgba(148,132,144,0.45) 32%,rgba(136,118,132,0.45) 36%,rgba(127,107,122,0.45) 43%,rgba(106,84,101,0.45) 54%,rgba(101,78,96,0.45) 61%,rgba(95,71,90,0.45) 64%,rgba(92,68,86,0.45) 79%,rgba(88,64,82,0.45) 82%,rgba(90,65,84,0.45) 89%,rgba(97,74,92,0.45) 93%,rgba(133,115,129,0.45) 96%,rgba(41,27,38,0.45) 100%);
+    background: linear-gradient(to bottom, rgba(237,251,244,0.45) 0,rgba(210,246,221,0.45) 4%,rgba(195,243,213,0.45) 11%,rgba(186,242,205,0.45) 18%,rgba(176,240,201,0.45) 21%,rgba(173,239,198,0.45) 25%,rgba(160,236,190,0.45) 29%,rgba(156,236,188,0.45) 32%,rgba(146,234,178,0.45) 36%,rgba(138,232,176,0.45) 43%,rgba(116,230,160,0.45) 54%,rgba(113,229,155,0.45) 61%,rgba(105,229,148,0.45) 64%,rgba(104,228,154,0.45) 79%,rgba(100,228,151,0.45) 82%,rgba(101,229,150,0.45) 89%,rgba(109,229,153,0.45) 93%,rgba(143,233,176,0.45) 96%,rgba(60,224,120,0.45) 100%);
     backdrop-filter: blur(4px); /* It's actually surprisingly easy to mod your 3DS */
     height: 32px;
     width: 100%;

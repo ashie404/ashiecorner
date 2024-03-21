@@ -24,6 +24,7 @@ function feedGET(recent) {
                 case 'Project Update':
                     // project update post STUFF !!!
                     tmp += '<h1 class="post project"><img src="img/wand-magic.png"> ' + element.find('title').text() + ' <span class="subnote"> | ' + element.find('pubDate').text() + '</span></h1>';
+                    break;
                 case 'Site Update':
                     // site update post stuff awawa
                     tmp += '<h1 class="post update"><img src="img/update.png"> ' + element.find('title').text() + ' <span class="subnote"> | ' + element.find('pubDate').text() + '</span></h1>';

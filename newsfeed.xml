@@ -7,6 +7,28 @@
   <description>Ash's little corner of the internet, home to their silly drawings and projects!</description>
 
   <item>
+    <category>Blog</category>
+    <pubDate>Thu, 21 Mar 2024 03:15:00 CDT</pubDate>
+
+    <title>Back from my unplanned hiatus!</title>
+    <description>Sorry that I've been radio silent for the past couple months. Despite being so quiet, I have still been working on my projects! I just got caught up with life, and have been pretty much neglecting my site as a result, oops.. Anyway, I'll try to be updating this
+      more again, as I'm a little less busy now and have some time to work on the site and write blog posts again! - Ash
+    </description>
+  </item>
+
+  <item>
+    <category>Project Update</category>
+    <pubDate>Fri, 15 Mar 2024 07:04:00 CDT</pubDate>
+
+    <title>JavaDungeons 2.0.0 Beta for 1.20.4 has been released!</title>
+    <description>JavaDungeons 2.0.0 Beta for Minecraft 1.20.4 has finally been released! See it on 
+      <a href="https://github.com/ashie404/JavaDungeons/releases/tag/2.0.0-beta%2B1.20.4">GitHub</a>
+      <a href="https://www.curseforge.com/minecraft/mc-mods/javadungeons/files/5184303">CurseForge</a>
+      <a href="https://modrinth.com/mod/javadungeons/version/2.0.0-beta+1.20.4">Modrinth</a>
+    </description>
+  </item>
+
+  <item>
     <category>Site Update</category>
     <pubDate>Tue, 14 Nov 2023 16:44:00 CST</pubDate>
 
@@ -105,7 +127,7 @@
   </item>
 
   <item>
-    <category>Blog</category>
+    <category>Project Update</category>
     <pubDate>Tue, 21 Mar 2023 21:45:00 CDT</pubDate>
 
     <title>melon shaders v2.6+pre1 released!</title>
@@ -140,7 +162,7 @@
   </item>
 
   <item>
-    <category>Blog</category>
+    <category>Project Update</category>
     <pubDate>Wed, 21 Dec 2022 18:27:00 CST</pubDate>
 
     <title>melon shaders v2.5 released!</title>
@@ -224,7 +246,7 @@
   </item>
   
   <item>
-    <category>Blog</category>
+    <category>Project Update</category>
     <pubDate>Sun, 23 Oct 2022 17:53:00 CDT</pubDate>
 
     <title>melon shaders v2.4 released!</title>
@@ -314,7 +336,7 @@
   </item>
 
   <item>
-    <category>Blog</category>
+    <category>Project Update</category>
     <pubDate>Mon, 19 Sep 2022 13:40:00 CDT</pubDate>
 
     <title>melon shaders v2.3 released!</title>

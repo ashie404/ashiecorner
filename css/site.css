@@ -484,6 +484,18 @@ text-shadow: 0px 0px 6px #8662e3;
     filter: drop-shadow(0 0 4px #ffcca9);
 }
 
+.project {
+    text-shadow: 0px 0px 6px #74ffd1; 
+    color: #c2ffeb; 
+    background: linear-gradient(to right, rgb(22, 114, 80) 0%,rgb(28, 101, 117) 50%,#3e1c7500 100%);
+}
+.project > .subnote {
+    color: #79d6c0;
+}
+.project > img {
+    filter: drop-shadow(0 0 4px #c2ffeb);
+}
+
 
 .raw-feed {
     font-family: 'Comicoro';

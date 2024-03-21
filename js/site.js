@@ -21,6 +21,9 @@ function feedGET(recent) {
             var element = $(this);
 
             switch (element.find("category").text()) {
+                case 'Project Update':
+                    // project update post STUFF !!!
+                    tmp += '<h1 class="post project"><img src="img/wand-magic.png"> ' + element.find('title').text() + ' <span class="subnote"> | ' + element.find('pubDate').text() + '</span></h1>';
                 case 'Site Update':
                     // site update post stuff awawa
                     tmp += '<h1 class="post update"><img src="img/update.png"> ' + element.find('title').text() + ' <span class="subnote"> | ' + element.find('pubDate').text() + '</span></h1>';
@@ -30,7 +33,7 @@ function feedGET(recent) {
                     tmp += '<h1 class="post blog"><img src="img/news.png"> ' + element.find('title').text() + ' <span class="subnote"> | ' + element.find('pubDate').text() + '</span></h2>';
                     break;
                 default:
-                    console.log('invalid category');
+                    console.error('Misformatted newsfeed: Invalid category');
                     break;
             }
             var desc = element.find("description").html();

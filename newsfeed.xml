@@ -5,6 +5,17 @@
   <title>ashiecorner blog!!</title>
   <link>https://ashiecorner.xyz</link>
   <description>Ash's little corner of the internet, home to their silly drawings and projects!</description>
+  
+  <item>
+    <category>Project Update</category>
+    <pubDate>Fri, 22 Mar 2024 11:26:00 CDT</pubDate>
+
+    <title>JavaDungeons 2.0.0 Beta 2 for 1.20.4 has been released!</title>
+    <description>JavaDungeons 2.0.0 Beta 2 for Minecraft 1.20.4 has been released! See it on 
+      <a href="https://github.com/ashie404/JavaDungeons/releases/tag/2.0.0-beta.2%2B1.20.4">GitHub</a>
+      <a href="https://modrinth.com/mod/javadungeons/version/2.0.0-beta.2+1.20.4">Modrinth</a>
+    </description>
+  </item>
 
   <item>
     <category>Blog</category>

@@ -1121,3 +1121,13 @@ iframe.captcha-frame {
     .page-content { width: calc(50vw - 306px); height: calc(50vh - 50px); overflow: scroll; }
     .sidebar { min-height: 50vh; height: 50vh; }
 }
+
+/* for users who prefer reduced motion */
+@media (prefers-reduced-motion) {
+    .sidebar {
+        background-image: url('../img/scrollbg.png');
+    }
+    .page-background {
+        background-image: url('../img/bg.png');
+    }
+}   

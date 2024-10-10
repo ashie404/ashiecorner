@@ -557,6 +557,7 @@ text-shadow: 0px 0px 6px #8662e3;
 #glow-fl {filter:drop-shadow(0px 0px 4px #F78C23)}
 #glow-ink {filter:drop-shadow(0px 0px 4px #455e82)}
 #glow-vsc {filter:drop-shadow(0px 0px 4px #25aff3)}
+#glow-kra {filter:drop-shadow(0px 0px 4px #ffccf8)}
 
 /* projects page cards */
 /* why did i have to put so much effort into these */

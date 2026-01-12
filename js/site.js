@@ -244,8 +244,11 @@ switch (day) {
     case 4: // thursday
         $(".index-img").attr("src", "/img/index4.png");
         break;
+    case 5: // friday
+        $(".index-img").attr("src", "/img/index5.png");
+        break;
     default: //  fallback pic
-        $(".index-img").attr("src", "/img/index4.png");
+        $(".index-img").attr("src", "/img/index5.png");
         break;
 }
 

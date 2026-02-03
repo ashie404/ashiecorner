@@ -826,27 +826,27 @@ img.emoji {
 }
 
 .gallery-selector > a {
-    margin-right: 32px;
-    color: #b2cfbf;
-    text-shadow: 0px 0px 0px transparent;
+    margin-right: 8px;
+    padding: 0px 10px 0px 10px;
+    color: #BBCCBB;
+    text-shadow: 0px 0px 6px #bbccbb;
     font-size: 32px;
     transition: 0.5s ease-in-out;
-    text-decoration: underline overline wavy transparent;
-    text-decoration-thickness: from-font;
+    text-decoration: none;
+    background: linear-gradient(to top, #17462f55 0%, #0a321e 50%, #09231655 100%);
+    border: 2px outset #BCB9;
 }
 .gallery-selector > a:hover {
     color: #99FFCC;
     text-shadow: 0px 0px 6px #99FFCC;
-    text-decoration: underline overline wavy #99FFCC;
-    text-decoration-thickness: from-font;
+    border: 2px outset #9fc9;
 }
 
 .gallery-selector > a[selected] {
-    text-decoration: underline overline wavy #99FFCCFF;
-    text-decoration-thickness: from-font;
-    background: linear-gradient(to top, rgba(0, 100, 50, 0) 0%, rgb(0, 100, 50) 50%, rgba(0, 100, 50, 0) 100%);
+    background: linear-gradient(to top, #00663355 0%, #006633 50%, #00663355 100%);
     color: #99FFCC;
     text-shadow: 0px 0px 6px #99FFCC;
+    border: 2px inset #9fc;
 }
 
 /* guestbook things */

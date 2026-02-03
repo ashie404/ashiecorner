@@ -180,7 +180,6 @@
 
         // gallery page selector handling
         $('.gallery-selector').on('click', 'a', function(){
-            console.log($(this).text());
             $(this).attr('selected', '').siblings().removeAttr('selected');
             $('#' + $(this).attr('ac-gallery-id')).attr('style', '').siblings().attr('style', 'display:none;')
         });

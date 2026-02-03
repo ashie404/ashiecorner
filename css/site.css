@@ -1162,3 +1162,29 @@ iframe.captcha-frame {
         background-image: url('../img/bg.png');
     }
 }   
+
+@keyframes loader {to{clip-path: inset(0 -2ch 0 0)}}
+.featherlight-loading .featherlight-content::before {
+  content: "Loading...";
+}
+
+.featherlight-loading .featherlight-content {
+    width: fit-content;
+    font-weight: bold;
+    font-family: Pixelpoiiz;
+    font-size: 40px;
+    color: #fff;
+    text-shadow: 0px 0px 6px #9fc;
+    clip-path: inset(0 1.75ch 0 0);
+    animation: loader 1s steps(8) infinite;
+    background: none!important;
+}
+
+.featherlight-loading .featherlight-content > * {
+  display: none !important;
+}
+
+.featherlight-loading .featherlight-close,
+.featherlight-loading .featherlight-inner {
+  display: none;
+}

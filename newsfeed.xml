@@ -8,6 +8,14 @@
 
   <item>
     <category>Site Update</category>
+    <pubDate>Tue, 3 Feb 2026 10:35:00 EST</pubDate>
+
+    <title>Loader animation in art gallery!</title>
+    <description>I've added a loader animation when you click on images to view them in full size in the art gallery, which will hopefully be more pleasant than an empty box appearing on slow connections!</description>
+  </item>
+
+  <item>
+    <category>Site Update</category>
     <pubDate>Mon, 2 Feb 2026 22:13:00 EST</pubDate>
 
     <title>Tabbed art gallery!</title>

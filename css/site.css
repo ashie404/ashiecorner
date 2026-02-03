@@ -832,6 +832,7 @@ img.emoji {
     font-size: 32px;
     transition: 0.5s ease-in-out;
     text-decoration: underline overline wavy transparent;
+    text-decoration-thickness: from-font;
 }
 .gallery-selector > a:hover {
     color: #99FFCC;

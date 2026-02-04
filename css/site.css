@@ -393,6 +393,16 @@ text-shadow: 0px 0px 6px #8662e3;
     color: #e0c2ff;
 }
 
+.hitcounter {
+    width: 168px;
+    height: 28px;
+    border: 4px #666 ridge;
+    display: block;
+    margin-top: 6px !important;
+    margin-left: auto!important;
+    margin-right: auto!important;
+}
+
 /* page content rules */
 .page-content {
     width: calc(100vw - 306px); /* god i love web development so much */
@@ -559,12 +569,19 @@ text-shadow: 0px 0px 6px #8662e3;
 #glow-vsc {filter:drop-shadow(0px 0px 4px #25aff3)}
 #glow-kra {filter:drop-shadow(0px 0px 4px #ffccf8)}
 
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 /* projects page cards */
 /* why did i have to put so much effort into these */
 .card {
     position: relative;
     display: block;
     margin-top: 20px;
+    margin-right: 20px;
     width: 50vw;
     max-width: 640px;
     border-radius: 5px;
@@ -1188,3 +1205,4 @@ iframe.captcha-frame {
 .featherlight-loading .featherlight-inner {
   display: none;
 }
+

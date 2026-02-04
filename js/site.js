@@ -5,7 +5,15 @@ async function hcGET() {
     if (response.ok) {
         let json = await response.json();
         if (json) {
-            $('#hits').text(json['hits'] + ' hits');
+            let startDigit = (7-json['hits'].length);
+			let i = 0;
+			json['hits'].toString().split('').forEach(function (digit) {
+				let currentDigit = startDigit + i;
+				$("#hc" + currentDigit).attr('src', '/img/hcgfx/' + digit + '.png');
+				i++;
+			});
+
+            $(".hitcounter").attr("title", "Hitcounter, " + json['hits'] + " hits.");
         }
     }
 }

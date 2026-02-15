@@ -8,6 +8,22 @@
 
   <item>
     <category>Site Update</category>
+    <pubDate>Sun, 15 Feb 2026 17:28:00 EST</pubDate>
+
+    <title>Big site update!</title>
+    <description>This is a pretty big update, but I'll try to keep the changelog concise x3
+    <ul>
+      <li>Index page rewritten, new logo instead of Apple's Hello! text</li>
+      <li>About me page rewritten, my electronics section removed to be re-done at a later date</li>
+      <li>Added commissions page, currently not finished/under construction</li>
+      <li>Sidebar background re-done, and Ash's Cozy Corner of the Internet text has been replaced with a new plant banner!</li>
+      <li>Various stylesheet changes</li>
+    </ul>
+    </description>
+  </item>
+
+  <item>
+    <category>Site Update</category>
     <pubDate>Wed, 4 Feb 2026 10:11:00 EST</pubDate>
 
     <title>New hitcounter!</title>

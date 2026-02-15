@@ -21,7 +21,7 @@
 }
 
 /* default html element overrides */
-html { overflow-x: hidden; }
+html { overflow-x: hidden; image-rendering: pixelated; }
 body {
     margin: 0;
     height: 100%;
@@ -32,7 +32,7 @@ body {
 
     background-color: #110022;
     background-image: url(../img/bg.png);
-    background-size: 128px;
+    background-size: 512px;
 
     image-rendering: pixelated;
 
@@ -43,8 +43,10 @@ h1, h2, h3, h4 {
     margin: 0;
     margin-left: -21px;
     padding-left: 21px;
+    padding-top: 4px;
+    padding-bottom: 4px;
     background: #550066;
-    background: linear-gradient(to right, #550066FF 0%,#550066FF 50%,#55006600 100%);
+    background: linear-gradient(to right, #850042FF 0%,#550066FF 50%,#55006600 100%);
     text-shadow: 0px 0px 8px #FF99CC;
 }
 h1 { font-size: 40px; }
@@ -191,12 +193,13 @@ td#icoX { text-align: center; filter: drop-shadow(0px 0px 3px #f55); }
 
 /* sidebar stuff */
 .sidebar {
+    image-rendering: pixelated;
     z-index: 2;
     position: fixed;
     display: flex;
     flex-direction: column;
     overflow-y: auto;
-    overflow-x: clip;
+    overflow-x: visible;
     width: 256px;
     height: 100%;
     min-height: 100vh;
@@ -205,19 +208,22 @@ td#icoX { text-align: center; filter: drop-shadow(0px 0px 3px #f55); }
     float: left;
     background-image: url(../img/scrollbg.gif);
     background-size: 128px;
-    border-right: 4px #550066 groove;
+    border-right: 4px #850042 groove;
     color: white;
 }
 .sidebar > p {
     margin: 0;
-    padding-top: 10px;
-    padding-bottom: 20px;
+    padding-top: 0px;
+    padding-bottom: 8px;
     font-size: 32px;
     line-height: 65%;
     color: #9fc;
     text-shadow: 0 0 6px #9fc;
     background-color: #285;
     background: linear-gradient(to bottom, #174, #1740);
+}
+.sidebar > p > img {
+    width: 100%;
 }
 
 /* nav button stuff */
@@ -272,10 +278,10 @@ td#icoX { text-align: center; filter: drop-shadow(0px 0px 3px #f55); }
 	line-height: 100%;
 	position: fixed;
 	top: 3px;
-	left: -256px;
-	visibility: hidden;
+	left: 0;
+    display: none;
 	width: 100vw;
-	z-index: 2;
+	z-index: 3;
 	background: linear-gradient(to top, #ff8ba46e 0%,#a0286087 50%, #31133abd 100%);
 }
 .mobilenav > div { 
@@ -425,10 +431,39 @@ text-shadow: 0px 0px 6px #8662e3;
 
 #hello {
     image-rendering: auto;
-    margin-bottom: 16px;
     width: 400px;
     max-width: 45vw;
     height: auto;
+    justify-self: center;
+}
+.welcome-container {
+    display: grid; 
+    justify-content: center;
+}
+.welcome-container > .subnote {
+    text-align: center; 
+    font-size: 32px!important; 
+    margin: 0 0 16px 0;
+}
+.welcome-container > h1 {
+    background: linear-gradient(to right, rgba(28, 101, 117, 0) 0%, rgba(22, 114, 80, 1) 50%, rgba(28, 101, 117, 0) 100%);
+    text-shadow: 0px 0px 6px #74ffd1; 
+    padding-top: 6px;
+    padding-bottom: 6px;
+    text-align: center;
+}
+.welcome-container > p {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    font-size: 32px;
+    max-width: 75vw;
+    justify-self: center;
+    text-align: center;
+}
+.welcome-container > p > a {
+    color: #99FFCC;
+    text-shadow: 0px 0px 6px #99FFCC;
+    font-size: 32px;
 }
 
 .construction {
@@ -465,6 +500,8 @@ text-shadow: 0px 0px 6px #8662e3;
     font-size: 32px;
     width: 65%;
     margin-top: 8px;
+    padding-top: 1px;
+    padding-bottom: 1px;
 }
 .post > .subnote {
     position: relative;
@@ -522,7 +559,7 @@ text-shadow: 0px 0px 6px #8662e3;
     min-width: 75px;
     min-height: 23px;
     padding: 0 12px;
-    margin-top: 8px;
+    margin-top: 4px;
     vertical-align: top;
     text-decoration: none;
     display: inline-block;
@@ -1157,7 +1194,7 @@ iframe.captcha-frame {
 	}
 	.mobilenav {
 		left: 0px;
-		visibility: visible;
+        display: block;
         backdrop-filter: blur(4px);
 	}
 }

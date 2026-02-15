@@ -13,6 +13,7 @@
     <title>Big site update!</title>
     <description>This is a pretty big update, but I'll try to keep the changelog concise x3
     <ul>
+      <li>Main site background updated, no longer animated</li>
       <li>Index page rewritten, new logo instead of Apple's Hello! text</li>
       <li>About me page rewritten, my electronics section removed to be re-done at a later date</li>
       <li>Added commissions page, currently not finished/under construction</li>

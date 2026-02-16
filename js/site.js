@@ -32,7 +32,7 @@ function feedGET(recent) {
                         weekday: "short",
                         month: "short",
                         year: 'numeric',
-                        day: '2-digit',
+                        day: 'numeric',
                         hour: '2-digit',
                         minute: '2-digit'
                     });

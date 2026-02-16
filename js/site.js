@@ -27,19 +27,27 @@ function feedGET(recent) {
             // exit loop on 5th entry if in recent feed mode
             if (recent == true && i == 5) { return false; }
             var element = $(this);
-
+            let pubDate = new Date(element.find('pubDate').text());
+            let localTime = pubDate.toLocaleString([], {
+                        weekday: "short",
+                        month: "short",
+                        year: 'numeric',
+                        day: '2-digit',
+                        hour: '2-digit',
+                        minute: '2-digit'
+                    });
             switch (element.find("category").text()) {
                 case 'Project Update':
                     // project update post STUFF !!!
-                    tmp += '<h1 class="post project"><img src="img/wand-magic.png"> ' + element.find('title').text() + ' <span class="subnote"> | ' + element.find('pubDate').text() + '</span></h1>';
+                    tmp += '<h1 class="post project"><img src="img/wand-magic.png"> ' + element.find('title').text() + ' <span class="subnote"> | ' + localTime + '</span></h1>';
                     break;
                 case 'Site Update':
                     // site update post stuff awawa
-                    tmp += '<h1 class="post update"><img src="img/update.png"> ' + element.find('title').text() + ' <span class="subnote"> | ' + element.find('pubDate').text() + '</span></h1>';
+                    tmp += '<h1 class="post update"><img src="img/update.png"> ' + element.find('title').text() + ' <span class="subnote"> | ' + localTime + '</span></h1>';
                     break;
                 case 'Blog':
                     // blog post stuff
-                    tmp += '<h1 class="post blog"><img src="img/news.png"> ' + element.find('title').text() + ' <span class="subnote"> | ' + element.find('pubDate').text() + '</span></h2>';
+                    tmp += '<h1 class="post blog"><img src="img/news.png"> ' + element.find('title').text() + ' <span class="subnote"> | ' + localTime + '</span></h2>';
                     break;
                 default:
                     console.error('Misformatted newsfeed: Invalid category');
